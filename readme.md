@@ -10,7 +10,7 @@ Because the datapack is in alpha and pretty much not playable in survival yet (n
 2. Copy pack.mcmeta to both of these folders.
 3. Copy the `assets` folder to `resourcepacks/Gaeacraft/` and copy the `data` folder to `datapacks/Gaeacraft/`.
 4. Open Minecraft, enable the resourcepack in the settings menu, and then open the world (or do `/reload`).
-5. Profit? Idk why you would want the datapack in its alpha state, but now you do!
+5. Profit? Idk why you would want the datapack in its alpha state, but now you have it!
 
 # Credits
 Datapack credits can be found in `assets/minecraft/texts/credits.txt`. This is both the Gaeacraft credits and the Minecraft credits.
