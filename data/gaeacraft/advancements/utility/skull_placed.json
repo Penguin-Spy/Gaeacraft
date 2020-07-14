@@ -1,0 +1,18 @@
+{
+  "parent": "gaeacraft:utility/root",
+  "rewards": {
+    "function": "gaeacraft:blocks/detect/scan"
+  },
+  "criteria": {
+    "block_placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "tag": "gaeacraft:player_heads"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:armor_stand,tag=raycast] at @s as @a if score @e[type=minecraft:armor_stand,tag=raycast,sort=nearest,limit=1] playerID = @s playerID run function gaeacraft:raycasting/effect
+execute as @e[type=minecraft:armor_stand,tag=raycast] run kill @s

@@ -1,0 +1,16 @@
+{
+    "parent": "gaeacraft:utility/root",
+    "rewards": {
+        "function": "gaeacraft:hud/status/thirst_4"
+    },
+    "criteria": {
+        "drank_item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "tag": "gaeacraft:status/thirst_4"
+                }
+            }
+        }
+    }
+}

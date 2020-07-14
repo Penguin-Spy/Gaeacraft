@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:stone_pickaxe",Count:1b,tag:{display:{Name:'{"translate":"item.gaeacraft.stone_hammer","italic":false}'},CustomModelData:1000001}}
+tag @s add crafting_output

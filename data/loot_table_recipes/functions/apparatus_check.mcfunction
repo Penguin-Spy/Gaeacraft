@@ -1,0 +1,1 @@
+execute if entity @s[tag=crafting_table] run function loot_table_recipes:crafting_table/master

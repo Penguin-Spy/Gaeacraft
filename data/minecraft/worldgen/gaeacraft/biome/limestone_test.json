@@ -1,0 +1,40 @@
+{
+  "starts": [],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "sky_color": 7254527,
+  "surface_builder": "minecraft:plains",
+  "carvers": {},
+  "features": [
+    [
+        "gaeacraft:fill_with_limestone"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "scale": 0.05,
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "precipitation": "rain",
+  "category": "none",
+  "depth": 0.125
+}

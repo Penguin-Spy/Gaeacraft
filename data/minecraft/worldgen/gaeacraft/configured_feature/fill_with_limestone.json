@@ -1,0 +1,12 @@
+{
+    "name": "fill_layer",
+    "config": {
+        "height": 15,
+        "state": {
+            "name": "minecraft:white_glazed_terracotta",
+            "properties": {
+                "facing": "north"
+            }
+        }
+    }
+}

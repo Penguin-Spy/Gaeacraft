@@ -1,0 +1,14 @@
+{
+  "values": [
+	"minecraft:grass_block",
+	"minecraft:mycelium",
+	"minecraft:podzol",
+	"minecraft:coarse_dirt",
+	"minecraft:dirt",
+	"minecraft:sand",
+	"minecraft:red_sand",
+	"minecraft:clay",
+	"minecraft:gravel",
+	"minecraft:stone"
+  ]
+}

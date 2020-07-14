@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:feather",Count:1b,tag:{display:{Name:'{"translate":"item.gaeacraft.grass_yarn","italic":false}'},CustomModelData:1000006}}
+tag @s add crafting_output

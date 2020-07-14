@@ -1,0 +1,67 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/limestone_polished",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:magenta_glazed_terracotta",
+                            "properties": {
+                                "facing": "north"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/marble_polished",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:magenta_glazed_terracotta",
+                            "properties": {
+                                "facing": "east"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/dolomite_polished",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:magenta_glazed_terracotta",
+                            "properties": {
+                                "facing": "west"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/slate_polished",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:magenta_glazed_terracotta",
+                            "properties": {
+                                "facing": "south"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ]
+        }
+    ]
+}

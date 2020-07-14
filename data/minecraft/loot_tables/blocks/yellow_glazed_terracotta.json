@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "gaeacraft:blocks/stone/granite_cobblestone",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:yellow_glazed_terracotta",
+              "properties": {
+                "facing": "north"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "gaeacraft:blocks/stone/diorite_cobblestone",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:yellow_glazed_terracotta",
+              "properties": {
+                "facing": "east"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "gaeacraft:blocks/stone/andesite_cobblestone",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:yellow_glazed_terracotta",
+              "properties": {
+                "facing": "west"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "gaeacraft:blocks/stone/basalt_cobblestone",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:yellow_glazed_terracotta",
+              "properties": {
+                "facing": "south"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

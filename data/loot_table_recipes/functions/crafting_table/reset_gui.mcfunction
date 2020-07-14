@@ -1,0 +1,53 @@
+clear @a #loot_table_recipes:all{loot_table_recipes:{gui:1b}}
+kill @e[type=minecraft:item,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}]
+execute unless data block ~ ~ ~ Items[{Slot:0b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:0b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:0b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:0b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:0b}]
+execute unless data block ~ ~ ~ Items[{Slot:4b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:4b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:4b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:4b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:4b}]
+execute unless data block ~ ~ ~ Items[{Slot:5b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:5b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:5b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:5b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:5b}]
+execute unless data block ~ ~ ~ Items[{Slot:6b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:6b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:6b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:6b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:6b}]
+execute unless data block ~ ~ ~ Items[{Slot:7b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:7b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:7b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:7b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:7b}]
+execute unless data block ~ ~ ~ Items[{Slot:8b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:8b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:8b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:8b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:8b}]
+execute unless data block ~ ~ ~ Items[{Slot:9b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:9b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:9b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:9b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:9b}]
+execute unless data block ~ ~ ~ Items[{Slot:13b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:13b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:13b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:13b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:13b}]
+execute unless data block ~ ~ ~ Items[{Slot:14b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:14b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:14b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:14b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:14b}]
+execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:16b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:16b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:16b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:16b}]
+execute unless data block ~ ~ ~ Items[{Slot:17b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:17b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:17b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:17b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:17b}]
+execute unless data block ~ ~ ~ Items[{Slot:18b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:18b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:18b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:18b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:18b}]
+execute unless data block ~ ~ ~ Items[{Slot:22b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:22b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:22b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:22b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:22b}]
+execute unless data block ~ ~ ~ Items[{Slot:23b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:23b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:23b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:23b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:23b}]
+execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:24b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:24b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:24b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:24b}]
+execute unless data block ~ ~ ~ Items[{Slot:25b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:25b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:25b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:25b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:25b}]
+execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:26b}] run summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone",Count:1b,tag:{loot_table_recipes:{gui:1b}}}}
+execute unless data block ~ ~ ~ Items[{Slot:26b,tag:{loot_table_recipes:{gui:1b}}}] if data block ~ ~ ~ Items[{Slot:26b}] run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{tag:{loot_table_recipes:{gui:1b}}}}] Item set from block ~ ~ ~ Items[{Slot:26b}]
+replaceitem block ~ ~ ~ container.0 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.4 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.5 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.6 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.7 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.8 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.9 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.13 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.14 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.16 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.17 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.18 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.22 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.23 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.24 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.25 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}
+replaceitem block ~ ~ ~ container.26 minecraft:gray_stained_glass_pane{loot_table_recipes:{gui:1b},display:{Name:'""'}}

@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"inventory_not_full": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"slots": {
+					"occupied": {
+						"max": 35
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "loot_table_recipes:inventory_not_full"
+	}
+}

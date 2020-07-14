@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:feather",Count:1b,tag:{display:{Name:'{"translate":"item.gaeacraft.stone_hammer_head","italic":false}'},CustomModelData:1000011}}
+tag @s add knapping_output

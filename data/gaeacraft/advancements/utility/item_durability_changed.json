@@ -1,0 +1,11 @@
+{
+    "parent": "gaeacraft:utility/root",
+    "criteria": {
+        "durability": {
+            "trigger": "minecraft:item_durability_changed"
+        }
+    },
+    "rewards": {
+        "function": "gaeacraft:get_tool_durability"
+    }
+}

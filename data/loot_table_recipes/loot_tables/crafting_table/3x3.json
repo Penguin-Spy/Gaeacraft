@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{loot_table_recipes:[
+											{Slot:0b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:1b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:2b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},
+											{Slot:3b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:4b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:5b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},
+											{Slot:6b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:7b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:8b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}}
+										]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:structure_void",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 9
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{test:1b}"
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "minecraft:air"
+						}
+					]
+				}
+			]
+		}
+	]
+}

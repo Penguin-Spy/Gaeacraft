@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"translate\":\"item.gaeacraft.stone.type.gabbro\",\"italic\":false},{\"text\":\" \",\"italic\":false},{\"translate\":\"item.gaeacraft.stone.form.rock\",\"italic\":false}]'},CustomModelData:200}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

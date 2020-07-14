@@ -1,0 +1,67 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/granite_bricks",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:lime_glazed_terracotta",
+                            "properties": {
+                                "facing": "north"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/diorite_bricks",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:lime_glazed_terracotta",
+                            "properties": {
+                                "facing": "east"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/andesite_bricks",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:lime_glazed_terracotta",
+                            "properties": {
+                                "facing": "west"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "gaeacraft:blocks/stone/basalt_bricks",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:block_state_property",
+                            "block": "minecraft:lime_glazed_terracotta",
+                            "properties": {
+                                "facing": "south"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ]
+        }
+    ]
+}

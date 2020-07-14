@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"loot_table_recipes_setup": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "loot_table_recipes:setup"
+	}
+}
