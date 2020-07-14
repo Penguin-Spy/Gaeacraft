@@ -1,1 +1,1 @@
-say Gaeacraft v.0 loaded.
+say Gaeacraft [0.0.8a] loaded.
