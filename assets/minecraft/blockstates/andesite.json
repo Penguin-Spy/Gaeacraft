@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/andesite"
+      },
+      {
+        "model": "minecraft:block/andesite_mirrored"
+      },
+      {
+        "model": "minecraft:block/andesite",
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/andesite_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

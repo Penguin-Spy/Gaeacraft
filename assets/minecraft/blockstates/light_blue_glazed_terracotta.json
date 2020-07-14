@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gaeacraft:block/stone/limestone_bricks"
+    },
+    "facing=east": {
+      "model": "gaeacraft:block/stone/marble_bricks"
+    },
+    "facing=west": {
+      "model": "gaeacraft:block/stone/dolomite_bricks"
+    },
+    "facing=south": {
+      "model": "gaeacraft:block/stone/slate_bricks"
+    }
+  }
+}

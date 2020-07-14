@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gaeacraft:block/stone/granite_bricks"
+    },
+    "facing=east": {
+      "model": "gaeacraft:block/stone/diorite_bricks"
+    },
+    "facing=west": {
+      "model": "gaeacraft:block/stone/andesite_bricks"
+    },
+    "facing=south": {
+      "model": "gaeacraft:block/stone/basalt_bricks"
+    }
+  }
+}

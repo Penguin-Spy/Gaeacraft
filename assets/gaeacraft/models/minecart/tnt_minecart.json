@@ -1,0 +1,76 @@
+{
+    "textures": {
+        "minecart": "gaeacraft:minecart/minecart",
+		"side": "minecraft:block/tnt_side",
+        "top": "minecraft:block/tnt_top",
+        "bottom": "minecraft:block/tnt_bottom"
+    },
+    "elements": [
+		{
+            "from": [ 0.0, 2.0, 0.0 ],
+            "to": [ 16.0, 18.0, 16.0 ],
+            "faces": {
+                "north": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#top", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#bottom", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "from": [ -2.4, -2.4, -5.0 ],
+            "to": [ 18.4, 0.2, 21.0 ],
+            "faces": {
+                "north": { "texture": "#minecart", "uv": [ 5.5, 6.0, 6.0, 14.0 ], "rotation": 90 },
+                "east": { "texture": "#minecart", "uv": [ 0.5, 5.0, 5.5, 6.0 ] },
+                "south": { "texture": "#minecart", "uv": [ 0.0, 6.0, 0.5, 14.0 ], "rotation": 90 },
+                "west": { "texture": "#minecart", "uv": [ 5.5, 5.0, 10.5, 6.0 ] },
+                "up": { "texture": "#minecart", "uv": [ 6.0, 6.0, 11.0, 14.0 ], "rotation": 90 },
+                "down": { "texture": "#minecart", "uv": [ 5.5, 6.0, 0.5, 14.0 ], "rotation": 90 }
+            }
+        },
+        {
+            "from": [ -2.4, 0.2, -5.0 ],
+            "to": [ 18.4, 10.6, -2.4 ],
+            "faces": {
+                "north": { "texture": "#minecart", "uv": [ 5.0, 1.0, 9.0, 5.0 ] },
+                "east": { "texture": "#minecart", "uv": [ 4.5, 1.0, 5.0, 5.0 ] },
+                "south": { "texture": "#minecart", "uv": [ 0.5, 1.0, 4.5, 5.0 ] },
+                "west": { "texture": "#minecart", "uv": [ 0.0, 1.0, 0.5, 5.0 ] },
+                "up": { "texture": "#minecart", "uv": [ 0.5, 0.0, 4.5, 1.0 ] },
+                "down": { "texture": "#minecart", "uv": [ 0.5, 0.0, 4.5, 1.0 ] }
+            }
+        },
+        {
+            "from": [ -2.4, 0.2, 18.4 ],
+            "to": [ 18.4, 10.6, 21.0 ],
+            "faces": {
+                "north": { "texture": "#minecart", "uv": [ 0.5, 1.0, 4.5, 5.0 ] },
+                "east": { "texture": "#minecart", "uv": [ 0.0, 1.0, 0.5, 5.0 ] },
+                "south": { "texture": "#minecart", "uv": [ 5.0, 1.0, 9.0, 5.0 ] },
+                "west": { "texture": "#minecart", "uv": [ 4.5, 1.0, 5.0, 5.0 ] },
+                "up": { "texture": "#minecart", "uv": [ 0.5, 1.0, 4.5, 0.0 ] },
+                "down": { "texture": "#minecart", "uv": [ 0.5, 0.0, 4.5, 1.0 ] }
+            }
+        },
+        {
+            "from": [ -2.4, 0.2, -2.4 ],
+            "to": [ 0.2, 10.6, 18.4 ],
+            "faces": {
+                "east": { "texture": "#minecart", "uv": [ 0.5, 1.0, 4.5, 5.0 ] },
+                "west": { "texture": "#minecart", "uv": [ 5.0, 1.0, 9.0, 5.0 ] },
+                "up": { "texture": "#minecart", "uv": [ 0.5, 0.0, 4.5, 1.0 ], "rotation": 270 }
+            }
+        },
+        {
+            "from": [ 15.8, 0.2, -2.4 ],
+            "to": [ 18.4, 10.6, 18.4 ],
+            "faces": {
+                "east": { "texture": "#minecart", "uv": [ 5.0, 1.0, 9.0, 5.0 ] },
+                "west": { "texture": "#minecart", "uv": [ 0.5, 1.0, 4.5, 5.0 ] },
+                "up": { "texture": "#minecart", "uv": [ 0.5, 0.0, 4.5, 1.0 ], "rotation": 90 }
+            }
+        }
+    ]
+}

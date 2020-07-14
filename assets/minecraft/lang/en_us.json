@@ -1,0 +1,47 @@
+{
+    "item.minecraft.ghast_spawn_egg": "Crafting Grid",
+    
+    "empty":"",
+    
+    "lore.tribe.name.pale_sun": "Pale Sun",
+    "lore.tribe.name.blood_moon": "Blood Moon",
+    "lore.tribe.name.arboreta": "Arboreta",
+    "lore.tribe.name.divine_electric": "Divine Electric       ᔑᒲ ∩𝙹ꖎ ",
+    
+    "container.knapping": "Knapping",
+    "container.knapping.button": "Click to remove",
+    
+    "description.tool.damage": "Damage:",
+    "description.tool.damage.slashing": "⚔ Slashing",
+    "description.tool.damage.piercing": "↑ Piercing",
+    "description.tool.damage.crushing": "✹ Crushing",
+    "description.tool.durability": "Durability:",
+    "description.element.air": "≈ Air",
+    "description.element.earth": "⏺ Earth",
+    "description.element.fire": "🔥 Fire",
+    "description.element.electric": "⚡ Electric",
+    
+    "item.gaeacraft.banner.prefix": "Banner of the ",
+    
+    "item.gaeacraft.stone.form.rock": "Chunk",
+    "item.gaeacraft.stone.form.raw": "Raw",
+    "item.gaeacraft.stone.form.cobblestone": "Cobblestone",
+    "item.gaeacraft.stone.form.polished": "Polished",
+    "item.gaeacraft.stone.form.bricks": "Bricks",
+    "item.gaeacraft.stone.type.gabbro": "Gabbro",
+    "item.gaeacraft.stone.type.limestone": "Limestone",
+    "item.gaeacraft.stone.type.marble": "Marble",
+    "item.gaeacraft.stone.type.dolomite": "Dolomite",
+    "item.gaeacraft.stone.type.slate": "Slate",
+    
+    "item.gaeacraft.error": "An error has occured.",
+    "item.gaeacraft.small_stone": "Small Stone",
+    "item.gaeacraft.grass_fiber": "Grass Fiber",
+    "item.gaeacraft.grass_yarn": "Grass Yarn",
+    "item.gaeacraft.crafting_grid": "Crafting Grid",
+    "item.gaeacraft.stone_axe_head": "Stone Axe Head",
+    "item.gaeacraft.stone_hoe_head": "Stone Hoe Head",
+    "item.gaeacraft.stone_hammer_head": "Stone Hammer Head",
+    "item.gaeacraft.stone_hammer": "Stone Hammer",
+    "item.gaeacraft.stone_shovel_head": "Stone Shovel Head"
+}

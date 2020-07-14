@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gaeacraft:block/stone/limestone_cobblestone"
+    },
+    "facing=east": {
+      "model": "gaeacraft:block/stone/marble_cobblestone"
+    },
+    "facing=west": {
+      "model": "gaeacraft:block/stone/dolomite_cobblestone"
+    },
+    "facing=south": {
+      "model": "gaeacraft:block/stone/slate_cobblestone"
+    }
+  }
+}

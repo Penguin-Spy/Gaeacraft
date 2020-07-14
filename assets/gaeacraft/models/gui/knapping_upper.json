@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:gui/template_upper",
+    "textures": {
+        "texture": "gaeacraft:gui/knapping_upper"
+    }
+}

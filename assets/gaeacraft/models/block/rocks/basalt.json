@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:block/rocks/base",
+	"textures": {
+		"stone": "minecraft:block/basalt_top"
+	}
+}

@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "gaeacraft:block/stone/basalt_raw",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored",
+        "x": 90,
+        "y": 270
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "gaeacraft:block/stone/basalt_raw"
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored"
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw",
+        "y": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored",
+        "y": 90
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "gaeacraft:block/stone/basalt_raw",
+        "x": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored",
+        "x": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw",
+        "x": 90,
+        "z": 90
+      },
+      {
+        "model": "gaeacraft:block/stone/basalt_raw_mirrored",
+        "x": 90,
+        "z": 90
+      }
+    ]
+  }
+}

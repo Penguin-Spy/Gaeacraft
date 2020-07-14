@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "gaeacraft:block/rocks/limestone" }
+        ]
+    }
+}

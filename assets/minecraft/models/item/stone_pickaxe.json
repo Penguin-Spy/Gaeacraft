@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld",
+	"textures": {
+		"layer0": "item/stone_pickaxe"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1000001}, "model": "gaeacraft:item/stone_hammer"}
+	]
+}

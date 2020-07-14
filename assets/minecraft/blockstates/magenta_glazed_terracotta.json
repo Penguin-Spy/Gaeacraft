@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gaeacraft:block/stone/limestone_polished"
+    },
+    "facing=east": {
+      "model": "gaeacraft:block/stone/marble_polished"
+    },
+    "facing=west": {
+      "model": "gaeacraft:block/stone/dolomite_polished"
+    },
+    "facing=south": {
+      "model": "gaeacraft:block/stone/slate_polished"
+    }
+  }
+}

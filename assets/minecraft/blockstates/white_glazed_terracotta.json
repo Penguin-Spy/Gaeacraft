@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "facing=north": [
+      {
+        "model": "gaeacraft:block/stone/limestone_raw"
+      },
+      {
+        "model": "gaeacraft:block/stone/limestone_raw_mirrored"
+      },
+      {
+        "model": "gaeacraft:block/stone/limestone_raw",
+        "y": 180
+      },
+      {
+        "model": "gaeacraft:block/stone/limestone_raw_mirrored",
+        "y": 180
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "gaeacraft:block/stone/marble_raw"
+      },
+      {
+        "model": "gaeacraft:block/stone/marble_raw_mirrored"
+      },
+      {
+        "model": "gaeacraft:block/stone/marble_raw",
+        "y": 180
+      },
+      {
+        "model": "gaeacraft:block/stone/marble_raw_mirrored",
+        "y": 180
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "gaeacraft:block/stone/dolomite_raw"
+      },
+      {
+        "model": "gaeacraft:block/stone/dolomite_raw_mirrored"
+      },
+      {
+        "model": "gaeacraft:block/stone/dolomite_raw",
+        "y": 180
+      },
+      {
+        "model": "gaeacraft:block/stone/dolomite_raw_mirrored",
+        "y": 180
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "gaeacraft:block/stone/slate_raw"
+      },
+      {
+        "model": "gaeacraft:block/stone/slate_raw_mirrored"
+      },
+      {
+        "model": "gaeacraft:block/stone/slate_raw",
+        "y": 180
+      },
+      {
+        "model": "gaeacraft:block/stone/slate_raw_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

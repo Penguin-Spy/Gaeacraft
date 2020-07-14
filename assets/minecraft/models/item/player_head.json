@@ -1,0 +1,29 @@
+{
+    "parent": "block/player_head",
+    "overrides": [
+        { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:item/stone/limestone_raw"},
+        { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:item/stone/marble_raw"},
+        { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:item/stone/dolomite_raw"},
+        { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:item/stone/slate_raw"},
+        { "predicate": { "custom_model_data": 11}, "model": "gaeacraft:item/stone/limestone_cobblestone"},
+        { "predicate": { "custom_model_data": 12}, "model": "gaeacraft:item/stone/marble_cobblestone"},
+        { "predicate": { "custom_model_data": 13}, "model": "gaeacraft:item/stone/dolomite_cobblestone"},
+        { "predicate": { "custom_model_data": 14}, "model": "gaeacraft:item/stone/slate_cobblestone"},
+        { "predicate": { "custom_model_data": 15}, "model": "gaeacraft:item/stone/granite_cobblestone"},
+        { "predicate": { "custom_model_data": 16}, "model": "gaeacraft:item/stone/diorite_cobblestone"},
+        { "predicate": { "custom_model_data": 17}, "model": "gaeacraft:item/stone/andesite_cobblestone"},
+        { "predicate": { "custom_model_data": 18}, "model": "gaeacraft:item/stone/basalt_cobblestone"},
+        { "predicate": { "custom_model_data": 21}, "model": "gaeacraft:item/stone/limestone_polished"},
+        { "predicate": { "custom_model_data": 22}, "model": "gaeacraft:item/stone/marble_polished"},
+        { "predicate": { "custom_model_data": 23}, "model": "gaeacraft:item/stone/dolomite_polished"},
+        { "predicate": { "custom_model_data": 24}, "model": "gaeacraft:item/stone/slate_polished"},
+        { "predicate": { "custom_model_data": 31}, "model": "gaeacraft:item/stone/limestone_bricks"},
+        { "predicate": { "custom_model_data": 32}, "model": "gaeacraft:item/stone/marble_bricks"},
+        { "predicate": { "custom_model_data": 33}, "model": "gaeacraft:item/stone/dolomite_bricks"},
+        { "predicate": { "custom_model_data": 34}, "model": "gaeacraft:item/stone/slate_bricks"},
+        { "predicate": { "custom_model_data": 35}, "model": "gaeacraft:item/stone/granite_bricks"},
+        { "predicate": { "custom_model_data": 36}, "model": "gaeacraft:item/stone/diorite_bricks"},
+        { "predicate": { "custom_model_data": 37}, "model": "gaeacraft:item/stone/andesite_bricks"},
+        { "predicate": { "custom_model_data": 38}, "model": "gaeacraft:item/stone/basalt_bricks"}
+    ]
+}
