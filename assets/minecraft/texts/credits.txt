@@ -12,8 +12,13 @@
 §f          Amber
 §f          PeerHeer
 
-§7Special Thanks
+§7Concepts
 §f          
+
+§7Special Thanks
+§f          Not Lewis
+§f          Bobthecow
+
 
 [C]§f============
 [C]§eMinecraft Team

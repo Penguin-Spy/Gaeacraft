@@ -37,32 +37,19 @@
         "model": "gaeacraft:block/stone/dolomite_raw"
       },
       {
-        "model": "gaeacraft:block/stone/dolomite_raw_mirrored"
+        "model": "gaeacraft:block/stone/dolomite_raw_alt"
       },
       {
         "model": "gaeacraft:block/stone/dolomite_raw",
         "y": 180
       },
       {
-        "model": "gaeacraft:block/stone/dolomite_raw_mirrored",
+        "model": "gaeacraft:block/stone/dolomite_raw_alt",
         "y": 180
       }
     ],
-    "facing=south": [
-      {
-        "model": "gaeacraft:block/stone/slate_raw"
-      },
-      {
-        "model": "gaeacraft:block/stone/slate_raw_mirrored"
-      },
-      {
-        "model": "gaeacraft:block/stone/slate_raw",
-        "y": 180
-      },
-      {
-        "model": "gaeacraft:block/stone/slate_raw_mirrored",
-        "y": 180
-      }
-    ]
+    "facing=south": {
+      "model": "gaeacraft:block/stone/slate_raw"
+    }
   }
 }

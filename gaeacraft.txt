@@ -1,0 +1,64 @@
+Custom Model Data Database:
+  Feather:
+    Gui Items:          0000000-0000099 (these can mix)
+    Button Items:       0000100-0000199 (buttons just start here)
+    Materials:          0000200-0000499
+      Rocks:                200-    209
+    Tool parts:         0000500-0000599
+  Armor Stand:
+    Custom Blocks:      0000000-0000199
+    Block Placement:    0000200-0000399
+  Player Head:
+    Blocks:             0000000-0000499
+      Stone:            0000000-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
+        Raw:            0000000-0000009
+        Cobblestone:    0000010-0000019
+        Polished:       0000020-0000029
+        Bricks:         0000030-0000039
+
+Player Head UUID Database:
+  Blocks:               0,0,0,0-0,0,0,499
+    Stone:              0,0,0,0-0,0,0,39    (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
+      Raw:              0,0,0,0-0,0,0,9
+      Cobblestone:      0,0,0,10-0,0,0,19
+      Polished:         0,0,0,20-0,0,0,29
+      Bricks:           0,0,0,30-0,0,0,39
+
+Character database:
+E000 - E004: heart
+E005 - E009: hunger
+E00A - E00E: thirst
+E00F - E014: aura
+E015 - E019: energy
+E01A - E01E: temperature
+E01F - E023: armor
+EFxx: SGA, xx = ascii code
+
+
+
+Petrology: find all types of stone
+
+Bismuthinite, Cassiterite, & Tetrahedrite generate as chunks on the surface, above their respective veins
+
+Bismuthinite, Cassiterite, Garnerite, Limonite: Pink GT
+Hematite: Iron Ore
+Magnetite, Malachite, Native Copper, Native Silver: Gray GT
+Native Gold: Gold Ore
+Sphalerite, Tetrahedrite, Borax, Cryolite: Light Gray GT
+Bituminous Coal: Coal Ore
+Cinnabar: Redstone Ore
+Graphite, Kaolinite, Lignite, Saltpeter: Cyan GT
+Kimberlite: Diamond Ore
+Lapis: Lapis Ore
+Sulfur, Galena, Native Platinum, [empty spot]: Purple GT
+
+
+
+copper, gold, silver, iron, lead, tin/bismuth, zinc, nickel
+brass, bronze
+
+brass = copper + zinc
+bronze = copper + (12 to 12.5)% tin
+
+
+
