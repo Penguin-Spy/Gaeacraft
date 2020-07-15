@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"translate\":\"item.gaeacraft.stone.type.dolomite\",\"italic\":false},{\"text\":\" \",\"italic\":false},{\"translate\":\"item.gaeacraft.stone.form.rock\",\"italic\":false}]'},CustomModelData:203}"
+              "tag": "{display:{Name:'{\"translate\":\"item.gaeacraft.stone.dolomite_chunk\",\"italic\":false}'},CustomModelData:203}"
             }
           ]
         }

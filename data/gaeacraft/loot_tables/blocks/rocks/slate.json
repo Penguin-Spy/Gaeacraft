@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"translate\":\"item.gaeacraft.stone.type.slate\",\"italic\":false},{\"text\":\" \",\"italic\":false},{\"translate\":\"item.gaeacraft.stone.form.rock\",\"italic\":false}]'},CustomModelData:204}"
+              "tag": "{display:{Name:'{\"translate\":\"item.gaeacraft.stone.slate_chunk\",\"italic\":false}'},CustomModelData:204}"
             }
           ]
         }
