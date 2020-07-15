@@ -37,6 +37,10 @@ EFxx: SGA, xx = ascii code
 
 
 Petrology: find all types of stone
+Lithic Reduction: create a flint tool using knapping
+
+Stone chunks generate on the surface are of the same type as the first layer of stone underground
+
 
 Bismuthinite, Cassiterite, & Tetrahedrite generate as chunks on the surface, above their respective veins
 
