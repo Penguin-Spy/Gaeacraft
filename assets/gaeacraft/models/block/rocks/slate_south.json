@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:block/rocks/base_south",
+	"textures": {
+		"stone": "gaeacraft:block/stone/slate_cobblestone"
+	}
+}

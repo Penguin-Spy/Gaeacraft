@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:block/rocks/base_south",
+	"textures": {
+		"stone": "minecraft:block/cobblestone"
+	}
+}

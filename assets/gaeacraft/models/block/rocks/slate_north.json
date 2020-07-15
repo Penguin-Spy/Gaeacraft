@@ -1,5 +1,5 @@
 {
-    "parent": "gaeacraft:block/rocks/base",
+    "parent": "gaeacraft:block/rocks/base_north",
 	"textures": {
 		"stone": "gaeacraft:block/stone/slate_cobblestone"
 	}

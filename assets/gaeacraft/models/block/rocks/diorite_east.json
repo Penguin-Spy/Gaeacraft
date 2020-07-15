@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:block/rocks/base_east",
+	"textures": {
+		"stone": "gaeacraft:block/stone/diorite_cobblestone"
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "gaeacraft:block/rocks/base_west",
+	"textures": {
+		"stone": "gaeacraft:block/stone/dolomite_cobblestone"
+	}
+}
