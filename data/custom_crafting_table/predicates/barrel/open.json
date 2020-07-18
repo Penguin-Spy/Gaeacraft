@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "block": "barrel",
+      "state": {
+        "open": "true"
+      }
+    }
+  }
+}

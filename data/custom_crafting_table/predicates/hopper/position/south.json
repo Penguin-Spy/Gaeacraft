@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "block": "hopper",
+        "state": {
+          "facing": "south"
+        }
+      }
+    }
+  }
