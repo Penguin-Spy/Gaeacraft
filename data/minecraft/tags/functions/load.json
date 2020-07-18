@@ -1,6 +1,5 @@
 {
     "values": [
-        "#gaeacraft:load",
-        "loot_table_recipes:setup"
+        "#load:__init"
     ]
 }

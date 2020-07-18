@@ -98,5 +98,12 @@
 				"down": {"uv": [1, 10, 15, 11], "texture": "#planks"}
 			}
 		}
-	]
+	],
+	"display": {
+        "head": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 15.0625, 0],
+            "scale":[ 1.6, 1.6, 1.6]
+        }
+    }
 }

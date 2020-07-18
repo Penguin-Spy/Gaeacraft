@@ -2,4 +2,5 @@ forceload add 0 0
 fill 0 1 0 15 1 15 minecraft:bedrock
 fill 0 0 0 15 0 15 minecraft:air
 setblock 0 0 0 minecraft:oak_wall_sign[facing=south]
-setblock 1 0 0 minecraft:shulker_box[facing=down]
+setblock 1 0 0 minecraft:yellow_shulker_box[facing=down]
+setblock 2 0 0 minecraft:yellow_shulker_box[facing=down]

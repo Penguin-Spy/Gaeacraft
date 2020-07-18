@@ -10,7 +10,7 @@
           "functions":[
             {
               "function":"set_nbt",
-              "tag": "{display:{Name:\'{\"translate\":\"item.gaeacraft.crafting_grid\",\"italic\":false}\'},CustomModelData:1000001,EntityTag:{NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"summon-crafting_grid\"]}}"
+              "tag": "{display:{Name:\'{\"translate\":\"block.gaeacraft.crafting_grid\",\"italic\":false}\'},CustomModelData:1,EntityTag:{NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"gc_summon.crafting_grid\"]}}"
             }
           ]
         }

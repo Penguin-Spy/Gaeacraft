@@ -1,1 +1,0 @@
-execute as @a at @s as @e[type=minecraft:armor_stand,tag=loot_table_recipes,distance=..7,sort=nearest,limit=1] at @s run function loot_table_recipes:apparatus_check

@@ -6,18 +6,22 @@
 §f          Penguin_Spy
 
 §7Mechanics
-§f          Cloud Wolf 
+§f          Cloud Wolf      - Custom HUD Concept
 §f          BlueCommander
-§f          Synthestra
-§f          Amber
-§f          PeerHeer
+§f          Synthestra      - Loot table crafting
+§f          Amber           - Negative space font
+§f          PeerHeer        - Tool Tags
+§f          Misode          - Invisible minecarts concept & models
 
-§7Concepts
-§f          
+§7Custom Crafting Table
+§f          _RedCoal_       - Datapack
+§f          Hardel          - Website: https://hardel.fr/generator/crafting
+§f          JeffWooden_     - Custom Crafting Table block
 
 §7Special Thanks
 §f          Not Lewis
 §f          Bobthecow
+§f          My lack of a social life
 
 
 [C]§f============

@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"nbt": "{Items:[
+											{Slot:0b,id:\"minecraft:stick\"},{Slot:1b,id:\"minecraft:structure_void\"},
+											{Slot:2b,id:\"minecraft:structure_void\"},{Slot:3b,id:\"minecraft:stick\"},
+											{Slot:4b,id:\"minecraft:structure_void\"},{Slot:5b,id:\"minecraft:structure_void\"}
+										]}"
+									}
+								}
+							],
+							"type": "item",
+							"name": "minecraft:stone",
+							"functions": [
+								{
+									"function": "set_count",
+									"count": 6
+								},
+								{
+									"function": "set_nbt",
+									"tag": "{test:1b}"
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "minecraft:air"
+						}
+					]
+				}
+			]
+		}
+	]
+}

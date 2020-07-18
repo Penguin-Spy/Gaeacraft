@@ -28,14 +28,19 @@
     "block.minecraft.diorite": "Raw Diorite",
     "block.minecraft.andesite": "Raw Andesite",
     "block.minecraft.basalt": "Raw Basalt",
-    
+
     "item.minecraft.ghast_spawn_egg": "Crafting Grid",
-    
+
     "empty":"",
-    
+    "item.gaeacraft.error": "An error has occured.",
+    "description.gaeacraft.version": "Gaeacraft version",
+    "description.gaeacraft.version.suffix": "α",
+    "description.gaeacraft.version.loaded": "loaded.",
+
     "container.carving": "Carving",
     "container.carving.button": "Click to remove",
-    
+    "container.crafting.locked_slot": "Locked Slot",
+
     "description.tool.damage": "Damage:",
     "description.tool.damage.slashing": "⚔ Slashing",
     "description.tool.damage.piercing": "↑ Piercing",
@@ -45,12 +50,12 @@
     "description.element.earth": "⏺ Earth",
     "description.element.fire": "🔥 Fire",
     "description.element.electric": "⚡ Electric",
-    
+
     "block.gaeacraft.banner.pale_sun": "Banner of the Pale Sun",
     "block.gaeacraft.banner.blood_moon": "Banner of the Blood Moon",
     "block.gaeacraft.banner.arboreta": "Banner of the Arboreta",
     "block.gaeacraft.banner.divine_electric": "Banner of the Divine Electric",
-    
+
     "block.gaeacraft.stone.limestone_raw": "Raw Limestone",
     "block.gaeacraft.stone.limestone_cobblestone": "Limestone Cobblestone",
     "block.gaeacraft.stone.limestone_polished": "Polished Limestone",
@@ -75,7 +80,7 @@
     "block.gaeacraft.stone.andesite_bricks": "Andesite Bricks",
     "block.gaeacraft.stone.basalt_cobblestone": "Basalt Cobblestone",
     "block.gaeacraft.stone.basalt_bricks": "Basalt Bricks",
-    
+
     "item.gaeacraft.stone.gabbro_chunk": "Gabbro Chunk",
     "item.gaeacraft.stone.limestone_chunk": "Limestone Chunk",
     "item.gaeacraft.stone.marble_chunk": "Marble Chunk",
@@ -85,8 +90,6 @@
     "item.gaeacraft.stone.diorite_chunk": "Diorite Chunk",
     "item.gaeacraft.stone.andesite_chunk": "Andesite Chunk",
     "item.gaeacraft.stone.basalt_chunk": "Basalt Chunk",
-    
-    "item.gaeacraft.error": "An error has occured.",
     "item.gaeacraft.grass_fiber": "Grass Fiber",
     "item.gaeacraft.grass_yarn": "Grass Yarn",
     "block.gaeacraft.crafting_grid": "Crafting Grid"

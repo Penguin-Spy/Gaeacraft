@@ -29,13 +29,14 @@ execute as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=!CCT_Closed] at @s 
 #timer
 scoreboard players add Timer CustomCraftingT 1
 execute if score Timer CustomCraftingT matches 1000.. as @e[type=armor_stand,tag=Custom_Crafting_Table] run data modify entity @s Fire set value 32670s
-execute if score Timer CustomCraftingT matches 1000.. run scoreboard players set Timer CustomCraftingT 0 
+execute if score Timer CustomCraftingT matches 1000.. as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=Custom_Crafting_Grid] at @s run function custom_crafting_table:table/open
+execute if score Timer CustomCraftingT matches 1000.. run scoreboard players set Timer CustomCraftingT 0
 
 
-#clear 
+#clear
 clear @a[tag=!global.ignore,predicate=custom_crafting_table:player_detect/gui_clear] #custom_crafting_table:clear{CCT_GUI_Clear:1}
 
 #destroy the table
-execute as @e[type=armor_stand,tag=Custom_Crafting_Table,predicate=!custom_crafting_table:barrel/barrel] at @s run function custom_crafting_table:table/destroy
+execute as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=!Custom_Crafting_Grid,predicate=!custom_crafting_table:barrel/barrel] at @s run function custom_crafting_table:table/destroy
 
 

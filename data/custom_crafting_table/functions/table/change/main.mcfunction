@@ -4,7 +4,6 @@ execute if data storage custom_crafting_table:craft Items[{Slot:8b,id:"minecraft
 execute if data storage custom_crafting_table:craft Items[{Slot:8b,id:"minecraft:book"}] unless data storage custom_crafting_table:craft Items[{Slot:8b,Count:1b}] unless data storage custom_crafting_table:craft Items[{Slot:26b}] run function custom_crafting_table:table/change/book/book_move
 
 
-
 data modify storage custom_crafting_table:craft Test set from storage custom_crafting_table:craft Items
 
 
@@ -25,11 +24,9 @@ execute unless score Book_Slot8 CustomCraftingT matches 1 store success score Bo
 
 execute if entity @s[tag=CCT_Display_Craft] run data remove storage custom_crafting_table:craft Test[{Slot:15b}]
 
-
-
-
 execute unless data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/display
-execute if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace/replace
+execute if entity @s[tag=!Custom_Crafting_Grid] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_table/replace
+execute if entity @s[tag=Custom_Crafting_Grid] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_grid/replace
 
 
 

@@ -27,31 +27,31 @@ data remove storage gaeacraft:hud hunger
 data remove storage gaeacraft:hud aura
 data remove storage gaeacraft:hud energy
 #Health
-scoreboard players set $maxTemp gc_count 40
-scoreboard players operation $temp gc_count = @s gc_health
+scoreboard players set $maxTemp gaeacraft.count 40
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.health
 function gaeacraft:hud/health
 #Armor
-scoreboard players set $maxTemp gc_count 40
-scoreboard players operation $temp gc_count = @s gc_armor
+scoreboard players set $maxTemp gaeacraft.count 40
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.armor
 function gaeacraft:hud/armor
 #Temperature
 
 function gaeacraft:hud/temperature
 #Thirst
-scoreboard players set $maxTemp gc_count 20
-scoreboard players operation $temp gc_count = @s gc_thirst
+scoreboard players set $maxTemp gaeacraft.count 20
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.thirst
 function gaeacraft:hud/thirst
 #Hunger
-scoreboard players set $maxTemp gc_count 20
-scoreboard players operation $temp gc_count = @s gc_hunger
+scoreboard players set $maxTemp gaeacraft.count 20
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.hunger
 function gaeacraft:hud/hunger
 #Aura
-scoreboard players set $maxTemp gc_count 20
-scoreboard players operation $temp gc_count = @s gc_aura
+scoreboard players set $maxTemp gaeacraft.count 20
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.aura
 function gaeacraft:hud/aura
 #Energy
-scoreboard players set $maxTemp gc_count 20
-scoreboard players operation $temp gc_count = @s gc_energy
+scoreboard players set $maxTemp gaeacraft.count 20
+scoreboard players operation $temp gaeacraft.count = @s gaeacraft.energy
 function gaeacraft:hud/energy
 
 

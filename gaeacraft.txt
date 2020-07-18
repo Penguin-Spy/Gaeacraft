@@ -1,17 +1,24 @@
 Custom Model Data Database:
   Feather:
-    Gui Items:          0000000-0000099 (these can mix)
-    Button Items:       0000100-0000199 (buttons just start here)
+    Special Items:      0000001-0000009
+      Error:                  1
+      Empty:                  2
+    Gui Items:          0000010-0000099
+      Crafting:              10
+      Knapping:              11
+    Widget Items:       0000100-0000199
+      Knapping button(s?):  100(-109?[-119])  (maybe add a different one for each stone type? [and make it change from raw texture to cobble?])
     Materials:          0000200-0000499
       Rocks:                200-    209
     Tool parts:         0000500-0000599
   Armor Stand:
-    Custom Blocks:      0000000-0000199
+    Custom Blocks:      0000001-0000199
+      Crafting Grid:          1
     Block Placement:    0000200-0000399
   Player Head:
-    Blocks:             0000000-0000499
-      Stone:            0000000-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
-        Raw:            0000000-0000009
+    Blocks:             0000001-0000499
+      Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
+        Raw:            0000001-0000009
         Cobblestone:    0000010-0000019
         Polished:       0000020-0000029
         Bricks:         0000030-0000039
@@ -33,6 +40,11 @@ E015 - E019: energy
 E01A - E01E: temperature
 E01F - E023: armor
 EFxx: SGA, xx = ascii code
+
+blocks:
+  0 0 0 oak_sign
+  1 0 0 shulker_box
+  2 0 0 shulker_box
 
 
 
@@ -64,5 +76,25 @@ brass, bronze
 brass = copper + zinc
 bronze = copper + (12 to 12.5)% tin
 
+Scoreboards:
+  CustomCraftingT
+  add the others, then make an uninstall function?
+
+Tags:
+  gc_cct_table: normal, autocrafting crafting table.
+  gc_cct_cart:  uses a chest_minecart instead of a barrel, cannot autocraft.
 
 
+
+CHANGES TO INCLUDED DATAPACKS:
+  custom_crafting_table:
+    functions/table/change/replace/summon:
+      execute as @e[type=item,tag=CCT_Summon] run data modify entity @s Item set from storage custom_crafting_table:craft Summon[{Slot:26b}]
+      to
+      execute as @e[type=item,tag=CCT_Summon] run function custom_crafting_table:table/change/replace/summon2
+    functions/table/place.mcfunction:
+      @9: execute at @s if block ~ ~ ~ #custom_crafting_table:place run setblock ~ ~ ~ barrel[facing=up]{CustomName:'[{"text":"\\uF803\\uef00\\uF80c\\uF80a\\uF808\\uF801","color":"white"},{"translate":"container.crafting","color":"#3F3F3F"}]'}
+    functions/table/change/display:
+      comment out tag removal and calling craft functions, replace with call to function gaeacraft:gui/check_crafting
+    functions/table/auto_craft/test_craft:
+      comment out tag removal and calling craft functions, replace with call to function gaeacraft:gui/check_crafting

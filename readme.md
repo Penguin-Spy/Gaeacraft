@@ -12,6 +12,9 @@ Because the datapack is in alpha and pretty much not playable in survival yet (n
 4. Open Minecraft, enable the resourcepack in the settings menu, and then open the world (or do `/reload`).
 5. Profit? Idk why you would want the datapack in its alpha state, but now you have it!
 
+# License
+Gaeacraft is distributed under the GNU General Public License Version 3. More information can be found in the file `LICENSE` in this directory. Gaeacraft contains a modified version of work licensed under Creative Commons Attribution 4.0 International. More information about this can be found in `custom_crafting_table/license.txt`.
+
 # Credits
 Datapack credits can be found in `assets/minecraft/texts/credits.txt`. This is both the Gaeacraft credits and the Minecraft credits.
 

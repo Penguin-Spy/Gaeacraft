@@ -3,7 +3,7 @@ kill @e[type=armor_stand,tag=Custom_Crafting_Table]
 
 scoreboard objectives remove CustomCraftingT
 
-forceload remove 16942000 -14269007 16942000 -14269007
+#forceload remove 16942000 -14269007 16942000 -14269007
 
 
 data remove storage custom_crafting_table:craft Items
