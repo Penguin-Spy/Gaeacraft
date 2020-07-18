@@ -1,6 +1,6 @@
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items set from block ~ ~ ~ Items
-execute if entity @s[tag=Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items set from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gc_cct_cart] Items
+execute if entity @s[tag=!gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items set from block ~ ~ ~ Items
+execute if entity @s[tag=gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items set from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gaeacraft.cct.chest_minecart] Items
 
 
 execute unless data storage custom_crafting_table:craft Items[{Slot:1b}].tag run data modify storage custom_crafting_table:craft Items[{Slot:1b}].tag.CCT_NoTag set value 1

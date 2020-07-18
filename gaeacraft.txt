@@ -77,24 +77,27 @@ brass = copper + zinc
 bronze = copper + (12 to 12.5)% tin
 
 Scoreboards:
-  CustomCraftingT
-  add the others, then make an uninstall function?
+  CustomCraftingT   - For custom_crafting_table
+  load              - Used by Lantern Load (i think)
+  gaeacraft.ver     - Gaeacraft version
+  gaeacraft.const   - Gaeacraft constants
+  gaeacraft.durab   - Stores player's tool durability temporarily, should change to use gaeacraft.count
+  gaeacraft.count   - Temporary scoreboard, not named temp because temp is temperature
+  gaeacraft.player  - Player ID, likely will be removed, was only used for raycasting (which will be removed), and UUID's are now easier to use
+  gaeacraft.sneakT  - minecraft.custom:minecraft.sneak_time
+  gaeacraft.health  - health, readonly, stores player health
+  gaeacraft.armor   - armor, readonly, stores player armor
+  gaeacraft.hunger  - food, readonly, stores player's food level
+  gaeacraft.thirst  - Stores player's water level
+  gaeacraft.aura    - Stores player's aura level
+  gaeacraft.energy  - Stores player's energy level
+  gaeacraft.temp    - Stores player's temperature, not for temporary values!
+  gaeacraft.craftX  - Stores width of items in the crafting grid
+  gaeacraft.craftY  - Stores height of items in the crafting grid
 
 Tags:
-  gc_cct_table: normal, autocrafting crafting table.
-  gc_cct_cart:  uses a chest_minecart instead of a barrel, cannot autocraft.
-
-
-
-CHANGES TO INCLUDED DATAPACKS:
-  custom_crafting_table:
-    functions/table/change/replace/summon:
-      execute as @e[type=item,tag=CCT_Summon] run data modify entity @s Item set from storage custom_crafting_table:craft Summon[{Slot:26b}]
-      to
-      execute as @e[type=item,tag=CCT_Summon] run function custom_crafting_table:table/change/replace/summon2
-    functions/table/place.mcfunction:
-      @9: execute at @s if block ~ ~ ~ #custom_crafting_table:place run setblock ~ ~ ~ barrel[facing=up]{CustomName:'[{"text":"\\uF803\\uef00\\uF80c\\uF80a\\uF808\\uF801","color":"white"},{"translate":"container.crafting","color":"#3F3F3F"}]'}
-    functions/table/change/display:
-      comment out tag removal and calling craft functions, replace with call to function gaeacraft:gui/check_crafting
-    functions/table/auto_craft/test_craft:
-      comment out tag removal and calling craft functions, replace with call to function gaeacraft:gui/check_crafting
+  Custom_Crafting_Table: normal, autocrafting crafting table.
+  gaeacraft.cct.chest_minecart:  tag for the minecart used in cct crafting
+  gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
+  gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
+  gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard

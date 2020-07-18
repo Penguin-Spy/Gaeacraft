@@ -1,6 +1,6 @@
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items set from block ~ ~ ~ Items
-execute if entity @s[tag=Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items set from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gc_cct_cart] Items
+execute if entity @s[tag=!gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items set from block ~ ~ ~ Items
+execute if entity @s[tag=gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items set from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gaeacraft.cct.chest_minecart] Items
 
 
 data modify storage custom_crafting_table:craft Test set from storage custom_crafting_table:craft Items
@@ -9,8 +9,8 @@ data remove storage custom_crafting_table:craft Test[{Slot:8b}]
 
 execute store result score Count CustomCraftingT if data storage custom_crafting_table:craft Test[]
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run function gaeacraft:gui/check_crafting_barrel
-execute if entity @s[tag=Custom_Crafting_Grid] run function gaeacraft:gui/check_crafting_cart
+execute if entity @s[tag=!gaeacraft.cct.cart] run function gaeacraft:gui/check_crafting_barrel
+execute if entity @s[tag=gaeacraft.cct.cart] run function gaeacraft:gui/check_crafting_cart
 
 #tag @s remove CCT_Display_Craft
 #tag @s remove CCT_Damage_Craft

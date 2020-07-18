@@ -11,7 +11,7 @@ function custom_crafting_table:table/custom_craft/clear/clear_craft_slot
 
 
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run data modify block ~ ~ ~ Items set from storage custom_crafting_table:craft Items
-execute if entity @s[tag=Custom_Crafting_Grid] run data modify entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gc_cct_cart] Items set from storage custom_crafting_table:craft Items
+execute if entity @s[tag=!gaeacraft.cct.cart] run data modify block ~ ~ ~ Items set from storage custom_crafting_table:craft Items
+execute if entity @s[tag=gaeacraft.cct.cart] run data modify entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gaeacraft.cct.chest_minecart] Items set from storage custom_crafting_table:craft Items
 
 

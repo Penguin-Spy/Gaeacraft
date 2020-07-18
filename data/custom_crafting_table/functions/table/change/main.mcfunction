@@ -25,8 +25,8 @@ execute unless score Book_Slot8 CustomCraftingT matches 1 store success score Bo
 execute if entity @s[tag=CCT_Display_Craft] run data remove storage custom_crafting_table:craft Test[{Slot:15b}]
 
 execute unless data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/display
-execute if entity @s[tag=!Custom_Crafting_Grid] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_table/replace
-execute if entity @s[tag=Custom_Crafting_Grid] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_grid/replace
+execute if entity @s[tag=!gaeacraft.cct.cart] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_table/replace
+execute if entity @s[tag=gaeacraft.cct.cart] if data storage custom_crafting_table:craft Test[0] run function custom_crafting_table:table/change/replace_grid/replace
 
 
 

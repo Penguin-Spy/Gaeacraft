@@ -33,12 +33,12 @@ execute if score $dimension_x1 CustomCraftingT matches 1 if score $dimension_x3 
 execute if score $dimension_y1 CustomCraftingT matches 1 if score $dimension_y3 CustomCraftingT matches 1 run scoreboard players set $dimension_y2 CustomCraftingT 1
 
 #add up how many rows are filled to get the total x and y size
-scoreboard players operation @s craft_dimens_x = $dimension_x1 CustomCraftingT
-scoreboard players operation @s craft_dimens_x += $dimension_x2 CustomCraftingT
-scoreboard players operation @s craft_dimens_x += $dimension_x3 CustomCraftingT
-scoreboard players operation @s craft_dimens_y = $dimension_y1 CustomCraftingT
-scoreboard players operation @s craft_dimens_y += $dimension_y2 CustomCraftingT
-scoreboard players operation @s craft_dimens_y += $dimension_y3 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftX = $dimension_x1 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftX += $dimension_x2 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftX += $dimension_x3 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftY = $dimension_y1 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftY += $dimension_y2 CustomCraftingT
+scoreboard players operation @s gaeacraft.craftY += $dimension_y3 CustomCraftingT
 
 #remove HandItems entries for empty rows (necessary, otherwise detecting smaller areas wont work when not in the top left [which is the whole point of this])
 execute if score $dimension_x1 CustomCraftingT matches 1 run function gaeacraft:gui/remove_rows_columns/x1
@@ -65,16 +65,16 @@ data remove storage custom_crafting_table:craft Temp2
 data modify storage custom_crafting_table:craft Temp2 set from block ~ ~ ~ Items[{Slot:15b}]
 
 #get the output
-execute if score @s craft_dimens_x matches 3 if score @s craft_dimens_y matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x3 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 2 if score @s craft_dimens_y matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x3 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 3 if score @s craft_dimens_y matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x2 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 1 if score @s craft_dimens_y matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x3 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 1 if score @s craft_dimens_y matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x2 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 3 if score @s craft_dimens_y matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x1 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 2 if score @s craft_dimens_y matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x2 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 2 if score @s craft_dimens_y matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x1 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 1 if score @s craft_dimens_y matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x1 ~ ~ ~ mainhand
-execute if score @s craft_dimens_x matches 0 if score @s craft_dimens_y matches 0 run data remove block ~ ~ ~ Items[{Slot:15b}]
+execute if score @s gaeacraft.craftX matches 3 if score @s gaeacraft.craftY matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x3 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 2 if score @s gaeacraft.craftY matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x3 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 3 if score @s gaeacraft.craftY matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x2 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 1 if score @s gaeacraft.craftY matches 3 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x3 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 1 if score @s gaeacraft.craftY matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x2 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 3 if score @s gaeacraft.craftY matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/3x1 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 2 if score @s gaeacraft.craftY matches 2 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x2 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 2 if score @s gaeacraft.craftY matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/2x1 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 1 if score @s gaeacraft.craftY matches 1 run loot replace block ~ ~ ~ container.15 fish gaeacraft:recipes/crafting_table/1x1 ~ ~ ~ mainhand
+execute if score @s gaeacraft.craftX matches 0 if score @s gaeacraft.craftY matches 0 run data remove block ~ ~ ~ Items[{Slot:15b}]
 
 #copy output to Items[{Slot:15b}], and add the CCT_Display_Craft tag if an item was returned
 data modify storage custom_crafting_table:craft Items[{Slot:15b}] merge from block ~ ~ ~ Items[{Slot:15b}]

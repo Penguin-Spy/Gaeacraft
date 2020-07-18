@@ -17,11 +17,11 @@ execute if score Name CustomCraftingT matches 1 run data merge block 0 0 0 {Text
 execute positioned 0 0 0 run kill @e[type=item,tag=Set_Name,distance=..0.2,limit=1]
 data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.display.Name set from block 0 0 0 Text1
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run data modify block ~ ~ ~ Items prepend from storage custom_crafting_table:craft CCT_GUI_Item[]
-execute if entity @s[tag=Custom_Crafting_Grid] run data modify entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gc_cct_cart] Items prepend from storage custom_crafting_table:craft CCT_GUI_Item[]
+execute if entity @s[tag=!gaeacraft.cct.cart] run data modify block ~ ~ ~ Items prepend from storage custom_crafting_table:craft CCT_GUI_Item[]
+execute if entity @s[tag=gaeacraft.cct.cart] run data modify entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gaeacraft.cct.chest_minecart] Items prepend from storage custom_crafting_table:craft CCT_GUI_Item[]
 
-execute if entity @s[tag=!Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.CCT_GUI_Item append from block ~ ~ ~ Items[{tag:{CCT_GUI_Item:1}}]
-execute if entity @s[tag=Custom_Crafting_Grid] run data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.CCT_GUI_Item append from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gc_cct_cart] Items[{tag:{CCT_GUI_Item:1}}]
+execute if entity @s[tag=!gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.CCT_GUI_Item append from block ~ ~ ~ Items[{tag:{CCT_GUI_Item:1}}]
+execute if entity @s[tag=gaeacraft.cct.cart] run data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.CCT_GUI_Item append from entity @e[type=minecraft:chest_minecart,limit=1,sort=nearest,tag=gaeacraft.cct.chest_minecart] Items[{tag:{CCT_GUI_Item:1}}]
 
 
 data modify storage custom_crafting_table:craft Items[{Slot:8b}].tag.CCT_Result_Craft set from storage custom_crafting_table:craft Items[{Slot:15b}]
