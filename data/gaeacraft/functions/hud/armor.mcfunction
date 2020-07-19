@@ -4,11 +4,11 @@
 #E000 - E004: heart
 
 #Determine the character, and append it to previous text
-execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud armor append value '{"text":"\\uE01F\\uF802"}'
-execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud armor append value '{"text":"\\uE020\\uF802"}'
-execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud armor append value '{"text":"\\uE021\\uF802"}'
-execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud armor append value '{"text":"\\uE022\\uF802"}'
-execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud armor append value '{"text":"\\uE023\\uF802"}'
+execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud armor append value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE01F"}]}'
+execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud armor append value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE020"}]}'
+execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud armor append value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE021"}]}'
+execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud armor append value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE022"}]}'
+execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud armor append value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE023"}]}'
 
 #sub 4 from both temps
 scoreboard players remove $maxTemp gaeacraft.count 4

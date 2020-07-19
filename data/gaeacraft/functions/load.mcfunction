@@ -17,6 +17,8 @@ scoreboard objectives add gaeacraft.durab dummy
 scoreboard objectives add gaeacraft.count dummy
 scoreboard objectives add gaeacraft.player dummy
 scoreboard objectives add gaeacraft.sneakT minecraft.custom:minecraft.sneak_time
+scoreboard objectives add gaeacraft.craftX dummy
+scoreboard objectives add gaeacraft.craftY dummy
 
 #player data
 scoreboard objectives add gaeacraft.health health
@@ -30,4 +32,4 @@ scoreboard objectives add gaeacraft.temp dummy
 
 schedule function gaeacraft:tick 1t
 
-tellraw @a[gamemode=creative] [{"translate":"description.gaeacraft.version","color":"green"},{"text":" ["},{"score": {"objective": "gaeacraft.ver","name": "$major"}},{"text":"."},{"score": {"objective": "gaeacraft.ver","name": "$minor"}},{"text":"."},{"score": {"objective": "gaeacraft.ver","name": "$patch"}},{"translate":"description.gaeacraft.version.suffix"},{"text":"] "},{"translate":"description.gaeacraft.version.loaded"}]
+tellraw @a[gamemode=creative] [{"translate":"description.gaeacraft.version.prefix","color":"green"},{"score": {"objective": "gaeacraft.ver","name": "$major"}},{"text":"."},{"score": {"objective": "gaeacraft.ver","name": "$minor"}},{"text":"."},{"score": {"objective": "gaeacraft.ver","name": "$patch"}},{"translate":"description.gaeacraft.version.suffix"}]

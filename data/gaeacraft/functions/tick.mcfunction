@@ -60,5 +60,6 @@ execute at @a as @e[type=minecraft:chest_minecart,tag=knapping,distance=0..10] r
 
 scoreboard players set @a gaeacraft.sneakT 0
 
+function custom_crafting_table:main
 
 schedule function gaeacraft:tick 1t

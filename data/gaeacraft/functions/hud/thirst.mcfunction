@@ -4,11 +4,11 @@
 #E00A - E00E: thirst
 
 #Determine the character, and prepend it to previous text
-execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud thirst prepend value '{"text":"\\uE00A\\uF802"}'
-execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud thirst prepend value '{"text":"\\uE00B\\uF802"}'
-execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud thirst prepend value '{"text":"\\uE00C\\uF802"}'
-execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud thirst prepend value '{"text":"\\uE00D\\uF802"}'
-execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud thirst prepend value '{"text":"\\uE00E\\uF802"}'
+execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud thirst prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00A"}]}'
+execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud thirst prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00B"}]}'
+execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud thirst prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00C"}]}'
+execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud thirst prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00D"}]}'
+execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud thirst prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00E"}]}'
 
 #sub 4 from both temps
 scoreboard players remove $maxTemp gaeacraft.count 4

@@ -9,7 +9,7 @@ data remove storage custom_crafting_table:craft Temp[{tag:{CCT_GUI_Clear:1}}]
 data remove storage custom_crafting_table:craft Temp[{Slot:8b}]
 data remove storage custom_crafting_table:craft Temp[{Slot:15b}]
 #locked slot items
-data remove storage custom_crafting_table:craft Temp[{id:"minecraft:barrier"}]
+data remove storage custom_crafting_table:craft Temp[{id:"minecraft:feather",CustomModelData:1}]
 
 
 

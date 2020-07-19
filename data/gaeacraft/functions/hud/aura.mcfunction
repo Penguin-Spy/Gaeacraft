@@ -4,11 +4,11 @@
 #E00F - E014: aura
 
 #Determine the character, and prepend it to previous text
-execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud aura prepend value '{"text":"\\uE00F\\uF802"}'
-execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud aura prepend value '{"text":"\\uE010\\uF802"}'
-execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud aura prepend value '{"text":"\\uE011\\uF802"}'
-execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud aura prepend value '{"text":"\\uE012\\uF802"}'
-execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud aura prepend value '{"text":"\\uE013\\uF802"}'
+execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud aura prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE00F"}]}'
+execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud aura prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE010"}]}'
+execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud aura prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE011"}]}'
+execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud aura prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE012"}]}'
+execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud aura prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE013"}]}'
 
 #sub 4 from both temps
 scoreboard players remove $maxTemp gaeacraft.count 4

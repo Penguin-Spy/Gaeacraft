@@ -33,9 +33,8 @@
 
     "empty":"",
     "item.gaeacraft.error": "An error has occured.",
-    "description.gaeacraft.version": "Gaeacraft version",
-    "description.gaeacraft.version.suffix": "α",
-    "description.gaeacraft.version.loaded": "loaded.",
+    "description.gaeacraft.version.prefix": "Gaeacraft version [α",
+    "description.gaeacraft.version.suffix": "] loaded.",
 
     "container.carving": "Carving",
     "container.carving.button": "Click to remove",

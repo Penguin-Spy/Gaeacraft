@@ -3,7 +3,7 @@ Custom Model Data Database:
     Special Items:      0000001-0000009
       Error:                  1
       Empty:                  2
-    Gui Items:          0000010-0000099
+    Gui Items:          0000010-0000099     Likely will be removed, because GUI textures will be done as unicode chars in a specific font
       Crafting:              10
       Knapping:              11
     Widget Items:       0000100-0000199
@@ -32,19 +32,47 @@ Player Head UUID Database:
       Bricks:           0,0,0,30-0,0,0,39
 
 Character database:
-E000 - E004: heart
-E005 - E009: hunger
-E00A - E00E: thirst
-E00F - E014: aura
-E015 - E019: energy
-E01A - E01E: temperature
-E01F - E023: armor
-EFxx: SGA, xx = ascii code
+gaeacraft:icons
+  E000 - E004: health
+  E005 - E009: hunger
+  E00A - E00E: thirst
+  E00F - E014: aura
+  E015 - E019: energy
+  E01A - E01E: temperature
+  E01F - E023: armor
+gaeacraft:gui
+  E000: crafting
 
 blocks:
   0 0 0 oak_sign
   1 0 0 shulker_box
   2 0 0 shulker_box
+
+Scoreboards:
+  CustomCraftingT   - For custom_crafting_table
+  load              - Used by Lantern Load (i think)
+  gaeacraft.ver     - Gaeacraft version
+  gaeacraft.const   - Gaeacraft constants
+  gaeacraft.durab   - Stores player's tool durability temporarily, should change to use gaeacraft.count
+  gaeacraft.count   - Temporary scoreboard, not named temp because temp is temperature
+  gaeacraft.player  - Player ID, likely will be removed, was only used for raycasting (which will be removed), and UUID's are now easier to use
+  gaeacraft.sneakT  - minecraft.custom:minecraft.sneak_time
+  gaeacraft.health  - health, readonly, stores player health
+  gaeacraft.armor   - armor, readonly, stores player armor
+  gaeacraft.hunger  - food, readonly, stores player's food level
+  gaeacraft.thirst  - Stores player's water level
+  gaeacraft.aura    - Stores player's aura level
+  gaeacraft.energy  - Stores player's energy level
+  gaeacraft.temp    - Stores player's temperature, not for temporary values!
+  gaeacraft.craftX  - Stores width of items in the crafting grid
+  gaeacraft.craftY  - Stores height of items in the crafting grid
+
+Tags:
+  Custom_Crafting_Table: base tag for custom crafting tables. alone, it signifies the normal, autocrafting table, but it is required for all others.
+  gaeacraft.cct.chest_minecart:  tag for the minecart used in cct crafting
+  gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
+  gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
+  gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
 
 
 
@@ -75,29 +103,3 @@ brass, bronze
 
 brass = copper + zinc
 bronze = copper + (12 to 12.5)% tin
-
-Scoreboards:
-  CustomCraftingT   - For custom_crafting_table
-  load              - Used by Lantern Load (i think)
-  gaeacraft.ver     - Gaeacraft version
-  gaeacraft.const   - Gaeacraft constants
-  gaeacraft.durab   - Stores player's tool durability temporarily, should change to use gaeacraft.count
-  gaeacraft.count   - Temporary scoreboard, not named temp because temp is temperature
-  gaeacraft.player  - Player ID, likely will be removed, was only used for raycasting (which will be removed), and UUID's are now easier to use
-  gaeacraft.sneakT  - minecraft.custom:minecraft.sneak_time
-  gaeacraft.health  - health, readonly, stores player health
-  gaeacraft.armor   - armor, readonly, stores player armor
-  gaeacraft.hunger  - food, readonly, stores player's food level
-  gaeacraft.thirst  - Stores player's water level
-  gaeacraft.aura    - Stores player's aura level
-  gaeacraft.energy  - Stores player's energy level
-  gaeacraft.temp    - Stores player's temperature, not for temporary values!
-  gaeacraft.craftX  - Stores width of items in the crafting grid
-  gaeacraft.craftY  - Stores height of items in the crafting grid
-
-Tags:
-  Custom_Crafting_Table: normal, autocrafting crafting table.
-  gaeacraft.cct.chest_minecart:  tag for the minecart used in cct crafting
-  gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
-  gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
-  gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard

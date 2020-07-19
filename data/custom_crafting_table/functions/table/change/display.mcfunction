@@ -15,6 +15,10 @@ data remove storage custom_crafting_table:craft Items[{Slot:15b}]
 execute if entity @s[tag=!gaeacraft.cct.cart] run function gaeacraft:gui/check_crafting_barrel
 execute if entity @s[tag=gaeacraft.cct.cart] run function gaeacraft:gui/check_crafting_cart
 
+#say a
+#data modify storage custom_crafting_table:craft Items[{Slot:15b}] set value {id:"minecraft:dirt",Count:1b}
+#tag @s add CCT_Display_Craft
+
 #tag @s remove CCT_Display_Craft
 #tag @s remove CCT_Damage_Craft
 #tag @s remove CCT_Bucket_Craft
