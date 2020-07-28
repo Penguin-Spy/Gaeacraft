@@ -13,5 +13,4 @@ data modify block 0 0 0 Text1 set value '{"text":" ","color":"blue","italic":"fa
 #shulker box
 data modify block 1 0 0 Items[{Slot:0b}] set from entity @s SelectedItem
 data modify block 1 0 0 Items[{Slot:0b}].tag.display.Lore[3] set from block 0 0 0 Text1
-#clears armor and offhand for some reason
-#loot replace entity @s weapon.mainhand mine 1 0 0 minecraft:stick{drop_contents:1b}
+loot replace entity @s weapon.mainhand 1 mine 1 0 0 minecraft:air{drop_contents:1b}

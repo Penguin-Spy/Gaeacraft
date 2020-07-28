@@ -2,7 +2,7 @@
 #scans the entire area a player could have placed a block, looking for player skulls. if one is found, gaeacraft:blocks/detect/convert is called at its position
 
 #revoke the advancement that triggered this function
-advancement revoke @s only gaeacraft:utility/skull_placed
+advancement revoke @s only gaeacraft:utility/detect_placed
 
 #scan the full placeable area
 execute positioned ~ ~-4 ~ run function gaeacraft:blocks/detect/5_5

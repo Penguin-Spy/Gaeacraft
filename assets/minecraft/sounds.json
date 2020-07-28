@@ -1,0 +1,26 @@
+{
+  "block.barrel.close": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "block/barrel/close",
+        "volume": 0.001
+      }
+    ]
+  },
+  "block.barrel.open": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "block/barrel/open1",
+        "volume": 0.001,
+        "pitch": 1
+      },
+      {
+        "name": "block/barrel/open2",
+        "volume": 0.001,
+        "pitch": 1
+      }
+    ]
+  }
+}

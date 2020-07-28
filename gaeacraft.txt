@@ -3,18 +3,16 @@ Custom Model Data Database:
     Special Items:      0000001-0000009
       Error:                  1
       Empty:                  2
-    Gui Items:          0000010-0000099     Likely will be removed, because GUI textures will be done as unicode chars in a specific font
-      Crafting:              10
-      Knapping:              11
-    Widget Items:       0000100-0000199
-      Knapping button(s?):  100(-109?[-119])  (maybe add a different one for each stone type? [and make it change from raw texture to cobble?])
-    Materials:          0000200-0000499
-      Rocks:                200-    209
-    Tool parts:         0000500-0000599
+      Helmet Icon:            3             (Invisible on the player's head, but displays the helmet icon in the inventory)
+    Widget Items:       0000010-0000099
+      Knapping button(s?):   10-     19
+    Materials:          0000100-0000399
+      Rocks:                100-    109
+    Tool parts:         0000400-0000599
   Armor Stand:
     Custom Blocks:      0000001-0000199
       Crafting Grid:          1
-    Block Placement:    0000200-0000399
+      Autocrafter:            2
   Player Head:
     Blocks:             0000001-0000499
       Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
@@ -22,6 +20,9 @@ Custom Model Data Database:
         Cobblestone:    0000010-0000019
         Polished:       0000020-0000029
         Bricks:         0000030-0000039
+      Machines:         0000100-0000299
+        Crafting Grid:      100
+        Autocrafter:        101
 
 Player Head UUID Database:
   Blocks:               0,0,0,0-0,0,0,499

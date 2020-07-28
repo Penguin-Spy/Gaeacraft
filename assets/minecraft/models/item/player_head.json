@@ -24,6 +24,8 @@
         { "predicate": { "custom_model_data": 35}, "model": "gaeacraft:item/stone/granite_bricks"},
         { "predicate": { "custom_model_data": 36}, "model": "gaeacraft:item/stone/diorite_bricks"},
         { "predicate": { "custom_model_data": 37}, "model": "gaeacraft:item/stone/andesite_bricks"},
-        { "predicate": { "custom_model_data": 38}, "model": "gaeacraft:item/stone/basalt_bricks"}
+        { "predicate": { "custom_model_data": 38}, "model": "gaeacraft:item/stone/basalt_bricks"},
+        { "predicate": { "custom_model_data": 100}, "model": "gaeacraft:block/machine/crafting_grid"},
+        { "predicate": { "custom_model_data": 101}, "model": "gaeacraft:block/machine/autocrafter"}
     ]
 }

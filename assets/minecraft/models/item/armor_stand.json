@@ -4,6 +4,7 @@
 		"layer0": "item/armor_stand"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/crafting_grid"}
+		{ "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/machine/crafting_grid"},
+		{ "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/machine/autocrafter"}
 	]
 }

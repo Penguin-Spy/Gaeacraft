@@ -9,7 +9,7 @@
       "conditions": {
         "location": {
           "block": {
-            "tag": "gaeacraft:player_heads"
+            "tag": "gaeacraft:detect_placed"
           }
         }
       }

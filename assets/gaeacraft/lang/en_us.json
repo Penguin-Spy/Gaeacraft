@@ -80,6 +80,9 @@
     "block.gaeacraft.stone.basalt_cobblestone": "Basalt Cobblestone",
     "block.gaeacraft.stone.basalt_bricks": "Basalt Bricks",
 
+    "block.gaeacraft.machine.crafting_grid": "Crafting Grid",
+    "block.gaeacraft.machine.autocrafter": "Autocrafter",
+
     "item.gaeacraft.stone.gabbro_chunk": "Gabbro Chunk",
     "item.gaeacraft.stone.limestone_chunk": "Limestone Chunk",
     "item.gaeacraft.stone.marble_chunk": "Marble Chunk",
@@ -90,6 +93,5 @@
     "item.gaeacraft.stone.andesite_chunk": "Andesite Chunk",
     "item.gaeacraft.stone.basalt_chunk": "Basalt Chunk",
     "item.gaeacraft.grass_fiber": "Grass Fiber",
-    "item.gaeacraft.grass_yarn": "Grass Yarn",
-    "block.gaeacraft.crafting_grid": "Crafting Grid"
+    "item.gaeacraft.grass_yarn": "Grass Yarn"
 }

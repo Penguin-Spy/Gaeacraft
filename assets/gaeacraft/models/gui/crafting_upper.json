@@ -1,6 +1,0 @@
-{
-    "parent": "gaeacraft:gui/template_upper",
-    "textures": {
-        "texture": "gaeacraft:gui/crafting_upper"
-    }
-}
