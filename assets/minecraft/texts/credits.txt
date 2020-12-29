@@ -12,6 +12,8 @@
 §f          Amber           - Negative space font
 §f          PeerHeer        - Tool Tags
 §f          Misode          - Invisible minecarts concept & models
+§f          TheWii          - Item frame block model
+§f          Aeldrion        - AESTD tag library
 
 §7Custom Crafting Table
 §f          _RedCoal_       - Datapack
@@ -19,9 +21,12 @@
 §f          JeffWooden_     - Custom Crafting Table block
 
 §7Special Thanks
+§f          The Minecraft Commands discord server
 §f          Not Lewis
 §f          Bobthecow
 §f          My lack of a social life
+§f          The Minecraft communtity, for shairing ideas and enthusiasm for this game.
+§f          Notch, Jeb, and the whole Minecraft team, for making an amazing game with this much customizability.
 
 
 [C]§f============

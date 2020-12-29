@@ -1,5 +1,5 @@
 {
-    "parent": "block/player_head",
+    "parent": "minecraft:item/template_skull",
     "overrides": [
         { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:item/stone/limestone_raw"},
         { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:item/stone/marble_raw"},

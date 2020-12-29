@@ -1,23 +1,23 @@
 {
-	"type": "minecraft:fishing",
+	"type": "fishing",
 	"pools": [
 		{
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:alternatives",
+					"type": "alternatives",
 					"children": [
 						{
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"condition": "match_tool",
 									"predicate": {
-										"nbt": "{Items:[{Slot:0b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}},{Slot:1b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}}]}"
+										"nbt": "{Items:[{Slot:0b,id:\"structure_void\",tag:{no_nbt:1b}},{Slot:1b,id:\"minecraft:structure_void\",tag:{no_nbt:1b}}]}"
 									}
 								}
 							],
 							"type": "item",
-							"name": "minecraft:structure_void",
+							"name": "structure_void",
 							"functions": [
 								{
 									"function": "set_count",
@@ -31,7 +31,7 @@
 						},
 						{
 							"type": "item",
-							"name": "minecraft:air"
+							"name": "air"
 						}
 					]
 				}

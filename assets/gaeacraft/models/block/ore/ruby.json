@@ -1,0 +1,6 @@
+{
+    "parent":"gaeacraft:block/ore/base",
+    "textures": {
+        "all": "gaeacraft:block/ore/ruby"
+    }
+}

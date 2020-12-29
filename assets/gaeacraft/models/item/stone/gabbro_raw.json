@@ -1,0 +1,17 @@
+{
+  "parent": "block/stone",
+  "display": {
+	"thirdperson_righthand": {
+	  "rotation": [90, 0, 0],
+	  "translation": [-6, -2, -12.02]
+	},
+	"thirdperson_lefthand": {
+	  "rotation": [90, 0, 0],
+	  "translation": [-6, -2, -12.02]
+	},
+	"head": {
+	  "translation": [0, -43.21, 0],
+	  "scale": [1.601, 1.601, 1.601]
+	}
+  }
+}

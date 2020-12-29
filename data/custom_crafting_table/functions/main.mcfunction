@@ -15,7 +15,7 @@ execute as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=CCT_Closed,tag=CCT_
 execute as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=CCT_Closed,tag=CCT_Auto_Craft_Enabled,predicate=custom_crafting_table:hopper/hopper] at @s run function custom_crafting_table:table/auto_craft/detect_output
 
 #disable minecart hopper
-execute as @e[distance=..1,type=hopper_minecart,tag=!global.ignore,tag=!IsLock] positioned ~ ~1 ~ if entity @e[distance=..1,type=armor_stand,tag=Custom_Crafting_Table] run data merge entity @s {Enabled:1,Tags:["IsLock"]}
+execute as @e[distance=..1,type=hopper_minecart,tag=!global.ignore,tag=!IsLock] positioned ~ ~1 ~ if entity @e[distance=..1,type=armor_stand,tag=Custom_Crafting_Table] run data merge entity @s {Enabled: 1, Tags: ["IsLock"]}
 
 
 #main
@@ -34,7 +34,7 @@ execute if score Timer CustomCraftingT matches 1000.. run scoreboard players set
 
 
 #clear
-clear @a[tag=!global.ignore,predicate=custom_crafting_table:player_detect/gui_clear] #custom_crafting_table:clear{CCT_GUI_Clear:1}
+clear @a[tag=!global.ignore,predicate=custom_crafting_table:player_detect/gui_clear] #custom_crafting_table:clear{CCT_GUI_Clear: 1}
 
 #destroy the table
 execute as @e[type=armor_stand,tag=Custom_Crafting_Table,tag=!gaeacraft.cct.cart,predicate=!custom_crafting_table:barrel/barrel] at @s run function custom_crafting_table:table/destroy

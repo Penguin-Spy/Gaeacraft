@@ -7,12 +7,24 @@ Custom Model Data Database:
     Widget Items:       0000010-0000099
       Knapping button(s?):   10-     19
     Materials:          0000100-0000399
-      Rocks:                100-    109
+      Ores:                 100-    114     (These 2 basically just are the same section)
+      Minerals:             115-    129     (e)
+      Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
+      Rocks:                200-    209
     Tool parts:         0000400-0000599
+  
   Armor Stand:
     Custom Blocks:      0000001-0000199
       Crafting Grid:          1
       Autocrafter:            2
+  
+  Stone (item):         0000001-0000008
+  
+  Iron ore (item):
+    Metals:             0000001-0000014
+    Minerals:           0000015-0000029
+    Gems:               0000030-0000037
+  
   Player Head:
     Blocks:             0000001-0000499
       Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
@@ -75,31 +87,76 @@ Tags:
   gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
 
+Campfire Loader?:
+  minecraft/tags/functions/load.json:
+    { values: [ "campfire_loader:load" ] }
+  campfire_loader/functions/load.mcfunction:
+    #clear and set up storage
+    function #campfire_loader:load_version
+
+  1st calls #campfire_loader:load_version
+  gaeacraft:  { major: 2b, minor: 8b, patch: 13b, dependencies: {}, function: "#gaeacraft:load" }
+  gc-story:   { major: 0b, minor: 3b, patch: 1b,  dependencies: { gaeacraft: { min: { major: 1b, minor: 4b, patch: 0b}, max: { major: 3b } } }, function: "gc-story:init"}
+  gc-liquids: { major: 0b, minor: 12b, patch: 2b, dependencies: { gaeacraft: { } }, compatibility: { gc-story: { major: 0b, minor: 3b, function: "gc-liquids:story-compat/add-story-liquids"} }, function: "gc-liquids:add-all" }
+
+
+
+
 
 
 Petrology: find all types of stone
 Lithic Reduction: create a flint tool using knapping
 
 Stone chunks generate on the surface are of the same type as the first layer of stone underground
+Gabbro  (Default)
+Limestone
+Marble
+Dolomite
+Slate
+Granite
+Diorite
+Andesite
+Basalt
+(Blackstone?)
 
 
-Bismuthinite, Cassiterite, & Tetrahedrite generate as chunks on the surface, above their respective veins
+Ores (Mainly copied from TFC, research for more?):
+Bismuth     (Bismuthinite)
+Tin         (Cassiterite)
+Lead        (Galena)
+Nickel      (Garnierite)
+Zinc        (Sphalerite)
+Copper      (Malachite, Tetrahedrite, Native Copper)
+Iron        (Limonite, Hematite, Magnetite)
+Gold        (Native Gold)
+Silver      (Native Silver)
+Platinum    (Native Platinum)
 
-Bismuthinite, Cassiterite, Garnerite, Limonite: Pink GT
-Hematite: Iron Ore
-Magnetite, Malachite, Native Copper, Native Silver: Gray GT
-Native Gold: Gold Ore
-Sphalerite, Tetrahedrite, Borax, Cryolite: Light Gray GT
-Bituminous Coal: Coal Ore
-Cinnabar: Redstone Ore
-Graphite, Kaolinite, Lignite, Saltpeter: Cyan GT
-Kimberlite: Diamond Ore
-Lapis: Lapis Ore
-Sulfur, Galena, Native Platinum, [empty spot]: Purple GT
+Minerals (Again, copied from TFC):
+Coal        (Peat → Lignite → Bituminous Coal → Anthracite)
+Borax
+Redstone    (Cinnabar, Cryolite[Granite])
+Graphite
+Kaolinite
+Saltpeter
+Sulfur
+Gypsum
+
+Gems (This time I copied from Terraria!):
+Ruby
+Topaz
+Peridot
+Emerald
+Diamond     (Kimberlite)
+Lapis
+Sapphire
+Amethyst
 
 
 
-copper, gold, silver, iron, lead, tin/bismuth, zinc, nickel
+
+
+copper, gold, silver, iron, lead, tin, bismuth, zinc, nickel
 brass, bronze
 
 brass = copper + zinc

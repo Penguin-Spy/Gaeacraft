@@ -1,0 +1,14 @@
+{
+    "parent": "block/stone",
+    "overrides": [
+        { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:item/stone/gabbro_raw"},
+        { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:item/stone/limestone_raw"},
+        { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:item/stone/marble_raw"},
+        { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:item/stone/dolomite_raw"},
+        { "predicate": { "custom_model_data": 5}, "model": "gaeacraft:item/stone/slate_raw"},
+        { "predicate": { "custom_model_data": 6}, "model": "gaeacraft:item/stone/granite_raw"},
+        { "predicate": { "custom_model_data": 7}, "model": "gaeacraft:item/stone/diorite_raw"},
+        { "predicate": { "custom_model_data": 8}, "model": "gaeacraft:item/stone/andesite_raw"},
+        { "predicate": { "custom_model_data": 9}, "model": "gaeacraft:item/stone/basalt_raw"}
+    ]
+}
