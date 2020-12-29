@@ -4,14 +4,14 @@
 
 
 #Player hud updating
-execute as @a run function gaeacraft:hud/main
+execute as @a[gamemode=!creative] run function gaeacraft:hud/main
 #Player trinket menu updating - unused, but left in incase i want to revisit it. currently too buggy and annoying to be used
 #execute as @a[nbt={recipeBook:{isGuiOpen:1b}}] run function gaeacraft:gui/trinket/main
 
 #prevent shift+clicking of helmets (and player heads, like the custom blocks)
 #this does not fix the fact that you can still place them on manually, with a stack of one, but it makes inventory management much less annoying.
 execute as @a unless data entity @s Inventory[{Slot:103b,id:"minecraft:feather"}] run clear @s minecraft:feather{CustomModelData:3}
-execute as @a unless data entity @s Inventory[{Slot:103b}] run replaceitem entity @s armor.head minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
+execute as @a unless data entity @s Inventory[{Slot:103b}] run item entity @s armor.head replace minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
 
 #Set display tile of normal minecarts
 execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run function gaeacraft:gui/invisible_minecarts
