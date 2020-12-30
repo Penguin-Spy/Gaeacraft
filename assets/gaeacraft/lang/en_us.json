@@ -92,6 +92,12 @@
     "item.gaeacraft.stone.diorite_chunk": "Diorite Chunk",
     "item.gaeacraft.stone.andesite_chunk": "Andesite Chunk",
     "item.gaeacraft.stone.basalt_chunk": "Basalt Chunk",
+
+    "item.gaeacraft.geo_res.ruby": "Ruby",
+    "item.gaeacraft.geo_res.topaz": "Topaz",
+    "item.gaeacraft.geo_res.peridot": "Peridot",
+    "item.gaeacraft.geo_res.sapphire": "Sapphire",
+
     "item.gaeacraft.grass_fiber": "Grass Fiber",
     "item.gaeacraft.grass_yarn": "Grass Yarn"
 }

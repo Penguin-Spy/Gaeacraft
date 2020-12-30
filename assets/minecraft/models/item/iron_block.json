@@ -1,0 +1,27 @@
+{
+    "parent": "block/iron_ore",
+    "overrides": [
+        { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/geo_res/bismuth_block"},
+        { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/geo_res/tin_block"},
+        { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:block/geo_res/lead_block"},
+        { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:block/geo_res/nickel_block"},
+
+        { "predicate": { "custom_model_data": 5}, "model": "gaeacraft:block/geo_res/zinc_block"},
+        { "predicate": { "custom_model_data": 13}, "model": "gaeacraft:block/geo_res/silver_block"},
+        { "predicate": { "custom_model_data": 14}, "model": "gaeacraft:block/geo_res/platinum_block"},
+
+        { "predicate": { "custom_model_data": 15}, "model": "gaeacraft:block/geo_res/lignite_block"},
+        { "predicate": { "custom_model_data": 17}, "model": "gaeacraft:block/geo_res/anthracite_block"},
+        { "predicate": { "custom_model_data": 18}, "model": "gaeacraft:block/geo_res/borax_block"},
+        { "predicate": { "custom_model_data": 21}, "model": "gaeacraft:block/geo_res/graphite_block"},
+        { "predicate": { "custom_model_data": 22}, "model": "gaeacraft:block/geo_res/kaolinite_block"},
+        { "predicate": { "custom_model_data": 23}, "model": "gaeacraft:block/geo_res/saltpeter_block"},
+        { "predicate": { "custom_model_data": 24}, "model": "gaeacraft:block/geo_res/sulfur_block"},
+        { "predicate": { "custom_model_data": 25}, "model": "gaeacraft:block/geo_res/gypsum_block"},
+
+        { "predicate": { "custom_model_data": 30}, "model": "gaeacraft:block/geo_res/ruby_block"},
+        { "predicate": { "custom_model_data": 31}, "model": "gaeacraft:block/geo_res/topaz_block"},
+        { "predicate": { "custom_model_data": 32}, "model": "gaeacraft:block/geo_res/peridot_block"},
+        { "predicate": { "custom_model_data": 36}, "model": "gaeacraft:block/geo_res/sapphire_block"}
+    ]
+}

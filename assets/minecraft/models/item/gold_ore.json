@@ -1,0 +1,39 @@
+{
+    "parent": "block/iron_ore",
+    "overrides": [
+        { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/geo_res/bismuthinite_rich_rich"},
+        { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/geo_res/cassiterite_rich"},
+        { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:block/geo_res/galena_rich"},
+        { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:block/geo_res/garnierite_rich"},
+        { "predicate": { "custom_model_data": 5}, "model": "gaeacraft:block/geo_res/sphalerite_rich"},
+        { "predicate": { "custom_model_data": 6}, "model": "gaeacraft:block/geo_res/malachite_rich"},
+        { "predicate": { "custom_model_data": 7}, "model": "gaeacraft:block/geo_res/tetrahedrite_rich"},
+        { "predicate": { "custom_model_data": 8}, "model": "gaeacraft:block/geo_res/native_copper_rich"},
+        { "predicate": { "custom_model_data": 9}, "model": "gaeacraft:block/geo_res/limonite_rich"},
+        { "predicate": { "custom_model_data": 10}, "model": "gaeacraft:block/geo_res/hematite_rich"},
+        { "predicate": { "custom_model_data": 11}, "model": "gaeacraft:block/geo_res/magnetite_rich"},
+        { "predicate": { "custom_model_data": 12}, "model": "gaeacraft:block/geo_res/native_gold_rich"},
+        { "predicate": { "custom_model_data": 13}, "model": "gaeacraft:block/geo_res/native_silver_rich"},
+        { "predicate": { "custom_model_data": 14}, "model": "gaeacraft:block/geo_res/native_platinum_rich"},
+
+        { "predicate": { "custom_model_data": 15}, "model": "gaeacraft:block/geo_res/lignite_rich"},
+        { "predicate": { "custom_model_data": 16}, "model": "gaeacraft:block/geo_res/bituminous_coal_rich"},
+        { "predicate": { "custom_model_data": 17}, "model": "gaeacraft:block/geo_res/anthracite_rich"},
+        { "predicate": { "custom_model_data": 18}, "model": "gaeacraft:block/geo_res/borax_rich"},
+        { "predicate": { "custom_model_data": 19}, "model": "gaeacraft:block/geo_res/cinnabar_rich"},
+        { "predicate": { "custom_model_data": 20}, "model": "gaeacraft:block/geo_res/cryolite_rich"},
+        { "predicate": { "custom_model_data": 21}, "model": "gaeacraft:block/geo_res/graphite_rich"},
+        { "predicate": { "custom_model_data": 22}, "model": "gaeacraft:block/geo_res/kaolinite_rich"},
+        { "predicate": { "custom_model_data": 23}, "model": "gaeacraft:block/geo_res/saltpeter_rich"},
+        { "predicate": { "custom_model_data": 24}, "model": "gaeacraft:block/geo_res/sulfur_rich"},
+        { "predicate": { "custom_model_data": 25}, "model": "gaeacraft:block/geo_res/gypsum_rich"},
+
+        { "predicate": { "custom_model_data": 30}, "model": "gaeacraft:block/geo_res/ruby_rich"},
+        { "predicate": { "custom_model_data": 31}, "model": "gaeacraft:block/geo_res/topaz_rich"},
+        { "predicate": { "custom_model_data": 32}, "model": "gaeacraft:block/geo_res/peridot_rich"},
+        { "predicate": { "custom_model_data": 33}, "model": "gaeacraft:block/geo_res/emerald_rich"},
+        { "predicate": { "custom_model_data": 34}, "model": "gaeacraft:block/geo_res/diamond_rich"},
+        { "predicate": { "custom_model_data": 35}, "model": "gaeacraft:block/geo_res/lapis_rich"},
+        { "predicate": { "custom_model_data": 36}, "model": "gaeacraft:block/geo_res/sapphire_rich"}
+    ]
+}

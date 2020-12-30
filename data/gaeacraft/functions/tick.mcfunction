@@ -26,6 +26,8 @@ execute as @e[type=minecraft:armor_stand,tag=gaeacraft.cct.cart] at @s if block 
 execute as @e[type=minecraft:armor_stand,tag=gaeacraft.cct.cart] at @s unless block ~ ~1 ~ #gaeacraft:air run function gaeacraft:blocks/machine/crafting_grid/remove
 execute as @e[type=minecraft:armor_stand,tag=gaeacraft.cct.cart] at @s unless entity @e[type=minecraft:chest_minecart,tag=gaeacraft.cct.chest_minecart,distance=0...75] run function gaeacraft:blocks/machine/crafting_grid/remove
 
+execute as @e[type=armor_stand,tag=gaeacraft.block.ore] at @s unless block ~ ~ ~ black_stained_glass run function gaeacraft:blocks/geo_res/remove
+execute as @e[type=armor_stand,tag=gaeacraft.block.ore_block] at @s unless block ~ ~ ~ black_stained_glass run function gaeacraft:blocks/geo_res/remove
 
 ##test for if a player is holding a crafting_grid gui feather item. MUST RUN FUNCTION AT PLAYER WHO's ITEM WAS CLEARED
 #execute as @a store result score @s gaeacraft.count run clear @s minecraft:feather{CustomModelData:1000001}

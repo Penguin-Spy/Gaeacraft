@@ -12,19 +12,19 @@ Custom Model Data Database:
       Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
       Rocks:                200-    209
     Tool parts:         0000400-0000599
-  
+
   Armor Stand:
     Custom Blocks:      0000001-0000199
       Crafting Grid:          1
       Autocrafter:            2
-  
+
   Stone (item):         0000001-0000008
-  
+
   Iron ore (item):
     Metals:             0000001-0000014
     Minerals:           0000015-0000029
     Gems:               0000030-0000037
-  
+
   Player Head:
     Blocks:             0000001-0000499
       Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
@@ -86,6 +86,7 @@ Tags:
   gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
   gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
+  gaeacraft.block.ore:  Is an ore block armorstand
 
 Campfire Loader?:
   minecraft/tags/functions/load.json:
@@ -107,6 +108,27 @@ Campfire Loader?:
 Petrology: find all types of stone
 Lithic Reduction: create a flint tool using knapping
 
+Provide:
+  Internal name
+  ID? (maybe use index in ores list)
+  Item texture (assumed to be in textures/item/geo_res/<name>.png if not excluded)
+  Ore colors
+  Ore type
+  Ore generation info
+  Additional flags for compatibility with vanilla resources
+
+
+- Gaeacraft - Item texture:   Manual    (textures/item/geo_res/<name>.png)
+  Minecraft - Item model:     Combine   (models/item/feather.json → overrides[{custom_model_data: <id>}])
++ Gaeacraft - Item model:     Auto      (models/item/geo_res/<name>.json)
+
++ Gaeacraft - Ore texture:    Auto      (textures/block/geo_res/<name>.png)
+  Minecraft - Ore models:     Auto      (models/item/iron_ore.json → overrides[{custom_model_data: <id>}])
++ Gaeacraft - Ore models:     Auto      (models/block/geo_res/<poor|normal|rich|block>_<name>.json)
+
+  Gaeacraft - Place fnction:  Auto      (functions/block/geo_res/<poor|normal|rich|block>_<name>.mcfunction)
+  Gaeacraft - Loot table:     Auto      (loot_tables/blocks/geo_res/<poor|normal|rich|block>_<name>.json)
+
 Stone chunks generate on the surface are of the same type as the first layer of stone underground
 Gabbro  (Default)
 Limestone
@@ -121,36 +143,36 @@ Basalt
 
 
 Ores (Mainly copied from TFC, research for more?):
-Bismuth     (Bismuthinite)
-Tin         (Cassiterite)
-Lead        (Galena)
-Nickel      (Garnierite)
-Zinc        (Sphalerite)
-Copper      (Malachite, Tetrahedrite, Native Copper)
-Iron        (Limonite, Hematite, Magnetite)
-Gold        (Native Gold)
-Silver      (Native Silver)
-Platinum    (Native Platinum)
+1       Bismuth     (Bismuthinite)
+2       Tin         (Cassiterite)
+3       Lead        (Galena)
+4       Nickel      (Garnierite)
+5       Zinc        (Sphalerite)
+6,7,8   Copper      (Malachite, Tetrahedrite, Native Copper)
+9,10,11 Iron        (Limonite, Hematite, Magnetite)
+12      Gold        (Native Gold)
+13      Silver      (Native Silver)
+14      Platinum    (Native Platinum)
 
 Minerals (Again, copied from TFC):
-Coal        (Peat → Lignite → Bituminous Coal → Anthracite)
-Borax
-Redstone    (Cinnabar, Cryolite[Granite])
-Graphite
-Kaolinite
-Saltpeter
-Sulfur
-Gypsum
+15,16,17 Coal        (Peat(not ore) → Lignite → Bituminous Coal → Anthracite)
+18      Borax
+19,20   Redstone    (Cinnabar, Cryolite[Granite])
+21      Graphite
+22      Kaolinite
+23      Saltpeter
+24      Sulfur
+25      Gypsum
 
 Gems (This time I copied from Terraria!):
-Ruby
-Topaz
-Peridot
-Emerald
-Diamond     (Kimberlite)
-Lapis
-Sapphire
-Amethyst
+30  Ruby
+31  Topaz
+32  Peridot
+33  Emerald
+34  Diamond     (Kimberlite)
+35  Lapis
+36  Sapphire
+37  Amethyst
 
 
 
