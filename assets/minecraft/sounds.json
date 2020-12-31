@@ -22,5 +22,14 @@
         "pitch": 1
       }
     ]
+  },
+  "block.glass.break": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "block.stone.break",
+        "type": "event"
+      }
+    ]
   }
 }

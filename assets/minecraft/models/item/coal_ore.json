@@ -1,5 +1,5 @@
 {
-    "parent": "block/iron_ore",
+    "parent": "block/coal_ore",
     "overrides": [
         { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/geo_res/bismuthinite_poor"},
         { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/geo_res/cassiterite_poor"},

@@ -39,10 +39,16 @@ Custom Model Data Database:
 Player Head UUID Database:
   Blocks:               0,0,0,0-0,0,0,499
     Stone:              0,0,0,0-0,0,0,39    (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
-      Raw:              0,0,0,0-0,0,0,9
-      Cobblestone:      0,0,0,10-0,0,0,19
-      Polished:         0,0,0,20-0,0,0,29
-      Bricks:           0,0,0,30-0,0,0,39
+      Raw:                    0-      9
+      Cobblestone:           10-      19
+      Polished:              20-      29
+      Bricks:                30-      39
+  Ores:                 1,q,s,r
+    1 - First digit signifies "Ore mode"
+    q - Quality, 0=poor, 1=normal, 2=rich
+    s - Stone, is stone id (1=gabbro, 2=limestone, etc.)
+    r - Resource, see resource database below for ids
+
 
 Character database:
 gaeacraft:icons
@@ -88,35 +94,6 @@ Tags:
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
   gaeacraft.block.ore:  Is an ore block armorstand
 
-Campfire Loader?:
-  minecraft/tags/functions/load.json:
-    { values: [ "campfire_loader:load" ] }
-  campfire_loader/functions/load.mcfunction:
-    #clear and set up storage
-    function #campfire_loader:load_version
-
-  1st calls #campfire_loader:load_version
-  gaeacraft:  { major: 2b, minor: 8b, patch: 13b, dependencies: {}, function: "#gaeacraft:load" }
-  gc-story:   { major: 0b, minor: 3b, patch: 1b,  dependencies: { gaeacraft: { min: { major: 1b, minor: 4b, patch: 0b}, max: { major: 3b } } }, function: "gc-story:init"}
-  gc-liquids: { major: 0b, minor: 12b, patch: 2b, dependencies: { gaeacraft: { } }, compatibility: { gc-story: { major: 0b, minor: 3b, function: "gc-liquids:story-compat/add-story-liquids"} }, function: "gc-liquids:add-all" }
-
-
-
-
-
-
-Petrology: find all types of stone
-Lithic Reduction: create a flint tool using knapping
-
-Provide:
-  Internal name
-  ID? (maybe use index in ores list)
-  Item texture (assumed to be in textures/item/geo_res/<name>.png if not excluded)
-  Ore colors
-  Ore type
-  Ore generation info
-  Additional flags for compatibility with vanilla resources
-
 
 - Gaeacraft - Item texture:   Manual    (textures/item/geo_res/<name>.png)
   Minecraft - Item model:     Combine   (models/item/feather.json → overrides[{custom_model_data: <id>}])
@@ -130,15 +107,15 @@ Provide:
   Gaeacraft - Loot table:     Auto      (loot_tables/blocks/geo_res/<poor|normal|rich|block>_<name>.json)
 
 Stone chunks generate on the surface are of the same type as the first layer of stone underground
-Gabbro  (Default)
-Limestone
-Marble
-Dolomite
-Slate
-Granite
-Diorite
-Andesite
-Basalt
+1 Gabbro  (Default)
+2 Limestone
+3 Marble
+4 Dolomite
+5 Slate
+6 Granite
+7 Diorite
+8 Andesite
+9 Basalt
 (Blackstone?)
 
 
@@ -174,6 +151,35 @@ Gems (This time I copied from Terraria!):
 36  Sapphire
 37  Amethyst
 
+
+Campfire Loader?:
+  minecraft/tags/functions/load.json:
+    { values: [ "campfire_loader:load" ] }
+  campfire_loader/functions/load.mcfunction:
+    #clear and set up storage
+    function #campfire_loader:load_version
+
+  1st calls #campfire_loader:load_version
+  gaeacraft:  { major: 2b, minor: 8b, patch: 13b, dependencies: {}, function: "#gaeacraft:load" }
+  gc-story:   { major: 0b, minor: 3b, patch: 1b,  dependencies: { gaeacraft: { min: { major: 1b, minor: 4b, patch: 0b}, max: { major: 3b } } }, function: "gc-story:init"}
+  gc-liquids: { major: 0b, minor: 12b, patch: 2b, dependencies: { gaeacraft: { } }, compatibility: { gc-story: { major: 0b, minor: 3b, function: "gc-liquids:story-compat/add-story-liquids"} }, function: "gc-liquids:add-all" }
+
+
+
+
+
+
+Petrology: find all types of stone
+Lithic Reduction: create a flint tool using knapping
+
+Provide:
+  Internal name
+  ID? (maybe use index in ores list)
+  Item texture (assumed to be in textures/item/geo_res/<name>.png if not excluded)
+  Ore colors
+  Ore type
+  Ore generation info
+  Additional flags for compatibility with vanilla resources
 
 
 

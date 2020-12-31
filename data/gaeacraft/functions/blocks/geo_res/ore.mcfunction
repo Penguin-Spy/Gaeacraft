@@ -1,3 +1,7 @@
-execute align xyz run summon minecraft:armor_stand ~.5 ~.5 ~.5 {Tags:["global.ignore","global.ignore.kill","gaeacraft.block.ore"],NoGravity:1b,Marker:1b,Invisible:1b,HandItems:[{id:"minecraft:stone",Count:1b,tag:{CustomModelData:1}},{id:"minecraft:gold_ore",Count:1b,tag:{CustomModelData:34}}],Pose:{LeftArm:[0f,0f],RightArm:[0f,0f]}}
-execute align xyz positioned ~.5 ~.5 ~.5 store result entity @e[type=armor_stand,limit=1,sort=nearest] HandItems[1].tag.CustomModelData byte 1 run scoreboard players get $ore.id gaeacraft.count
-setblock ~ ~ ~ minecraft:black_stained_glass
+execute store result score $ore.quality gaeacraft.count run data get block ~ ~ ~ SkullOwner.Id[1]
+execute store result score $ore.stone gaeacraft.count run data get block ~ ~ ~ SkullOwner.Id[2]
+execute store result score $ore.resource gaeacraft.count run data get block ~ ~ ~ SkullOwner.Id[3]
+
+execute if score $ore.quality gaeacraft.count matches 0 run function gaeacraft:blocks/geo_res/ore_poor
+execute if score $ore.quality gaeacraft.count matches 1 run function gaeacraft:blocks/geo_res/ore_normal
+execute if score $ore.quality gaeacraft.count matches 2 run function gaeacraft:blocks/geo_res/ore_rich

@@ -1,5 +1,5 @@
 {
-    "parent": "block/iron_ore",
+    "parent": "block/gold_ore",
     "overrides": [
         { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/geo_res/bismuthinite_rich_rich"},
         { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/geo_res/cassiterite_rich"},

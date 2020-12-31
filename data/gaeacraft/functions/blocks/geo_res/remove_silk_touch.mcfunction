@@ -1,0 +1,6 @@
+data modify entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item set value {id:"minecraft:player_head",Count:1b,tag:{silk_touch:1b,SkullOwner:{Id:[I; 1, 0, 1, 16]},display:{Name:'{"translate":"item.gaeacraft.geo_res.silk_touched_ore","italic":false}'},CustomModelData:0}}
+execute if entity @s[nbt={HandItems:[{id:"minecraft:iron_ore"}]}] run data modify entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item.tag.SkullOwner.Id[1] set value 1
+execute if entity @s[nbt={HandItems:[{id:"minecraft:gold_ore"}]}] run data modify entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item.tag.SkullOwner.Id[1] set value 2
+data modify entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item.tag.SkullOwner.Id[2] set from entity @s HandItems[0].tag.CustomModelData
+data modify entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item.tag.SkullOwner.Id[3] set from entity @s HandItems[1].tag.CustomModelData
+data remove entity @e[type=item,distance=0...5,nbt={Item:{tag:{silk_touch:1b}}},limit=1,sort=nearest] Item.tag.silk_touch

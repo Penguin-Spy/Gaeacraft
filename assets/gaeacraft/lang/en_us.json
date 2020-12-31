@@ -93,6 +93,10 @@
     "item.gaeacraft.stone.andesite_chunk": "Andesite Chunk",
     "item.gaeacraft.stone.basalt_chunk": "Basalt Chunk",
 
+    "item.gaeacraft.geo_res.malachite": "Malachite",
+    "item.gaeacraft.geo_res.limonite": "Limonite",
+    "item.gaeacraft.geo_res.hematite": "Hematite",
+
     "item.gaeacraft.geo_res.ruby": "Ruby",
     "item.gaeacraft.geo_res.topaz": "Topaz",
     "item.gaeacraft.geo_res.peridot": "Peridot",

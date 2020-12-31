@@ -1,5 +1,5 @@
 {
-    "parent": "block/iron_ore",
+    "parent": "block/iron_block",
     "overrides": [
         { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/geo_res/bismuth_block"},
         { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/geo_res/tin_block"},
