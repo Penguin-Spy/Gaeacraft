@@ -29,8 +29,8 @@ execute positioned ~ ~ ~-4 if block ~ ~ ~ #gaeacraft:detect_placed run function 
 execute positioned ~ ~ ~4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 
 #Z = 1
-execute positioned ~ ~ ~-4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
-execute positioned ~ ~ ~4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
+execute positioned ~1 ~ ~-4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
+execute positioned ~1 ~ ~4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 
 #Z = 2
 execute positioned ~1 ~ ~-4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
