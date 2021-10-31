@@ -4,19 +4,22 @@ execute as @a[tag=!global.ignore] run function gaeacraft:init/player
 #0,0 Chunk
 function gaeacraft:init/chunk_0_0
 
+#Scoreboards
 scoreboard objectives add gaeacraft.ver dummy
 scoreboard players set $major gaeacraft.ver 0
 scoreboard players set $minor gaeacraft.ver 3
-scoreboard players set $patch gaeacraft.ver 1
+scoreboard players set $patch gaeacraft.ver 2
 
 scoreboard objectives add gaeacraft.const dummy
 scoreboard players set -1 gaeacraft.const -1
 scoreboard players set $durability_stoneAxe gaeacraft.const 131
 scoreboard objectives add gaeacraft.durab dummy
+
 #used as temp scoreboard, but not named temp because temperature is stored in temp. yeah, weird naming, but idc
 scoreboard objectives add gaeacraft.count dummy
 scoreboard objectives add gaeacraft.player dummy
 scoreboard objectives add gaeacraft.sneakT minecraft.custom:minecraft.sneak_time
+
 scoreboard objectives add gaeacraft.craftX dummy
 scoreboard objectives add gaeacraft.craftY dummy
 

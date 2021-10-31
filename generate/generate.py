@@ -13,8 +13,6 @@ except (IndexError):
 # generate.py item geo_res/hematite
 
 
-
-
 def replaceColor(data, r, g, b, color):
     red, green, blue = data[:, :, 0], data[:, :, 1], data[:, :, 2]
     mask = (red == r) & (green == g) & (blue == b)
@@ -27,9 +25,9 @@ def replaceColor(data, r, g, b, color):
 if generate == 'h' or generate == 'help':
     print(f"Usage: \
         \n\t{sys.argv[0]} ore <name> <ore|mineral|gem> [[r,g,b],[r,g,b],[r,g,b],...]\
-        \n\t{sys.argv[0]} item [path]/<name>")
+        \n\t{sys.argv[0]} item [path/]<name> [id]")
 
-    # TODO: add item ID & feather override to item command, add block command (model, <item model | terracotta blockstate>, convert_player_head.mcfunction lines?)
+    # TODO: add block command (model, <item model | terracotta blockstate>, convert_player_head.mcfunction lines?)
 
 elif generate == 'ore':
     # Load arguments
@@ -90,6 +88,10 @@ elif generate == 'ore':
 elif generate == 'item':
     # Load arguments
     item_name = sys.argv[2]
+    try:
+        item_id = sys.argv[3]
+    except (IndexError):
+        item_id = 0
 
     # Create & open item model file
     item = open(f'../assets/gaeacraft/models/item/{item_name}.json', 'w')
@@ -102,6 +104,9 @@ elif generate == 'item':
         for word in item_name.split('.')[-1].split(" ")
     ])
     print(f'lang.json:\n"item.gaeacraft.{item_name}": "{item_readable_name}",')
+    if not item_id == 0:
+        print('feather.json:\n{"predicate": {"custom_model_data": ' +
+              item_id + '}}, "model": "gaeacraft:item/' + item_name + '"},')
 
     # Save and close model
     item.close()

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag": "{display:{Name:'{\"translate\":\"item.gaeacraft.frond_yarn\",\"italic\":false}'},CustomModelData:600}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

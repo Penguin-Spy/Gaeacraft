@@ -2,6 +2,11 @@
 #well, not all the things, but the things that need to happen constantly
 
 
+#Mining fatigue / Adventure mode
+execute as @a[tag=!gaeacraft.player.holding_tool,predicate=gaeacraft:holding_tool] run function gaeacraft:tools/start_holding
+execute as @a[tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
+
+
 
 #Player hud updating
 execute as @a[gamemode=!creative] run function gaeacraft:hud/main
@@ -11,7 +16,7 @@ execute as @a[gamemode=!creative] run function gaeacraft:hud/main
 #prevent shift+clicking of helmets (and player heads, like the custom blocks)
 #this does not fix the fact that you can still place them on manually, with a stack of one, but it makes inventory management much less annoying.
 execute as @a unless data entity @s Inventory[{Slot:103b,id:"minecraft:feather"}] run clear @s minecraft:feather{CustomModelData:3}
-execute as @a unless data entity @s Inventory[{Slot:103b}] run item entity @s armor.head replace minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
+execute as @a unless data entity @s Inventory[{Slot:103b}] run item replace entity @s armor.head with minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
 
 #Set display tile of normal minecarts
 execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run function gaeacraft:gui/invisible_minecarts

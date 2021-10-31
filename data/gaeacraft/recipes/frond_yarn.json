@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "//",
+    "//"
+  ],
+  "key": {
+    "/": {"item": "minecraft:feather"}
+  },
+  "result": {
+    "item": "minecraft:knowledge_book",
+    "tag": "{CustomModelData:601,Recipes:[]}"
+  }
+}

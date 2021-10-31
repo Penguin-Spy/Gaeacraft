@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gaeacraft:block/debug"
+    },
+    "facing=east": {
+      "model": "gaeacraft:block/debug2"
+    },
+    "facing=west": {
+      "model": "gaeacraft:block/debug"
+    },
+    "facing=south": {
+      "model": "gaeacraft:block/debug2"
+    }
+  }
+}

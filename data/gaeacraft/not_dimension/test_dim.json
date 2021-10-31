@@ -1,0 +1,68 @@
+{
+  "type": {
+    "name": "gaeacraft:test_type",
+    "ultrawarm": false,
+    "natural": true,
+    "piglin_safe": false,
+    "respawn_anchor_works": true,
+    "bed_works": true,
+    "has_raids": false,
+    "has_skylight": true,
+    "has_ceiling": false,
+    "coordinate_scale": 1,
+    "ambient_light": 1,
+    "logical_height": 256,
+    "infiniburn": "minecraft:infiniburn_overworld",
+    "min_y": 0,
+    "height": 256
+  },
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -1844199542,
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "seed": -1844199542,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -8,
+        "amplitudes": [
+          0,
+          18
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "gaeacraft:test_biome",
+          "parameters": {
+            "altitude": 0,
+            "temperature": 0,
+            "humidity": 1,
+            "weirdness": 0,
+            "offset": 0
+          }
+        }
+      ]
+    },
+    "settings": "minecraft:overworld"
+  }
+}

@@ -5,6 +5,9 @@
 §7Creator
 §f          Penguin_Spy
 
+§fThe following people did not directly contribute to Gaeacraft,
+§fhowever, tools or resources they created are used in Gaeacraft.
+
 §7Mechanics
 §f          Cloud Wolf      - Custom HUD Concept
 §f          BlueCommander
@@ -14,6 +17,7 @@
 §f          Misode          - Invisible minecarts concept & models
 §f          TheWii          - Item frame block model
 §f          Aeldrion        - AESTD tag library
+§f          Legitimoose     - Eye of Ender right-clicking
 
 §7Custom Crafting Table
 §f          _RedCoal_       - Datapack
@@ -26,7 +30,9 @@
 §f          Bobthecow
 §f          My lack of a social life
 §f          The Minecraft communtity, for shairing ideas and enthusiasm for this game.
-§f          Notch, Jeb, and the whole Minecraft team, for making an amazing game with this much customizability.
+
+§f          Notch, Jeb, and the whole Minecraft team, for making such an amazing game that
+§f              gives the players the power to create whatever they dream of.
 
 
 [C]§f============
