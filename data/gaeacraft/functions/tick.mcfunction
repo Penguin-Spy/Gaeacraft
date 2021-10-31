@@ -3,13 +3,16 @@
 
 
 #Mining fatigue / Adventure mode
-execute as @a[tag=!gaeacraft.player.holding_tool,predicate=gaeacraft:holding_tool] run function gaeacraft:tools/start_holding
-execute as @a[tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
+execute as @a[gamemode=!creative,tag=!gaeacraft.player.holding_tool,predicate=gaeacraft:holding_tool] run function gaeacraft:tools/start_holding
+execute as @a[gamemode=!creative,tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
 
-
+#deleting invisible item frames (from generated ground resources)
+execute as @e[type=minecraft:item_frame,nbt={Invisible:1b},nbt=!{Item:{}}] run kill @s
 
 #Player hud updating
 execute as @a[gamemode=!creative] run function gaeacraft:hud/main
+
+
 #Player trinket menu updating - unused, but left in incase i want to revisit it. currently too buggy and annoying to be used
 #execute as @a[nbt={recipeBook:{isGuiOpen:1b}}] run function gaeacraft:gui/trinket/main
 

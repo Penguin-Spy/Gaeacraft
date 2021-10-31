@@ -9,5 +9,4 @@ execute if entity @s[tag=!gaeacraft.player.hasID] run scoreboard players add $ne
 execute if entity @s[tag=!gaeacraft.player.hasID] run tag @s add gaeacraft.player.hasID
 
 # setup inital tags
-#doesn't matter if they're actually holding it, just need to initally think they are
-tag @s add gaeacraft.player.holding_tool
+tag @s[predicate=gaeacraft:holding_tool] add gaeacraft.player.holding_tool
