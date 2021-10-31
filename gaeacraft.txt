@@ -201,21 +201,3 @@ bronze = copper + (12 to 12.5)% tin
 
 ambient entity effect looks like those modded miniboss mobs that are just RNG bs
   make something cool out of that
-
-
-
-mining/tools/whatever:
-  if no tool is held:
-    + gamemode survival
-    + mining fatigue 255
-    this means the player can only break insta-mine blocks (which is what we want)
-  if a tool is held:
-    + gamemode adventure
-    + clear mining fatigue
-    what blocks can be mined is set by the tool's can_destroy nbt
-      can_destroy can use #item:tags zog
-      the game provides tool-related mineable tags by default now!
-      the game also provides what tool teir is needed to drop loot for a block
-        those tags only apply to blocks that already need a certain teir
-    can't mine insta-mine blocks by default, but we can just include them in the tag
-    /give @p stone_axe{CanDestroy:["#minecraft:mineable/axe"],HideFlags:8} 1
