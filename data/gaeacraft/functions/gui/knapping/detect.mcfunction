@@ -2,7 +2,7 @@
 # unless data entity @s Items[{Slot:1b}] unless data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] unless data entity @s Items[{Slot:10b}] unless data entity @s Items[{Slot:11b}] unless data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}]
 
 execute store success score $success gaeacraft.count run data remove entity @s Items[{Slot:15b}]
-execute if entity @s[tag=gaeacraft.gui_cart.knapping.has_output] if score $success gaeacraft.count matches 0 at @s as @a[tag=gaeacraft.player.can_knap] if score @s gaeacraft.player = @e[type=chest_minecart,tag=gaeacraft.gui_cart.knapping.has_output,sort=nearest,limit=1] gaeacraft.player run function gaeacraft:gui/knapping/end
+execute if entity @s[tag=gaeacraft.gui_cart.knapping.has_output] if score $success gaeacraft.count matches 0 at @s as @a[tag=gaeacraft.player.can_knap] if score @s gaeacraft.player = @e[type=chest_minecart,tag=gaeacraft.gui_cart.knapping.has_output,sort=nearest,limit=1] gaeacraft.player run function gaeacraft:gui/knapping/finish
 
 tag @s remove gaeacraft.gui_cart.knapping.has_output
 
