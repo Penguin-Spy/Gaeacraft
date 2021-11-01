@@ -1,3 +1,0 @@
-execute if data entity @s Items[{Slot:15b}] run summon minecraft:item ~ ~ ~ {Tags:["crafting_grid_eject"],Item:{id:"minecraft:feather",Count:1b,tag:{display:{Name:'{"translate":"item.gaeacraft.error","italic":false}'},CustomModelData:1000000}}}
-execute if data entity @s Items[{Slot:15b}] run data modify entity @e[type=minecraft:item,tag=crafting_grid_eject,distance=0,limit=1] Item set from entity @s Items[{Slot:15b}]
-data remove entity @s Items[{Slot:15b}]

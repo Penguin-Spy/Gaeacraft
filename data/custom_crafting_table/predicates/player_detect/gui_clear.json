@@ -1,7 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Inventory:[{tag:{CCT_GUI_Clear:1}}]}"
-    }
-  }
