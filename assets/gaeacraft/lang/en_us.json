@@ -36,15 +36,15 @@
     "description.gaeacraft.version.prefix": "Gaeacraft version [α",
     "description.gaeacraft.version.suffix": "] loaded.",
 
-    "container.carving": "Carving",
-    "container.carving.button": "Click to remove",
+    "container.knapping": "Knapping",
+    "container.knapping.button": "Click to carve away",
+
     "container.crafting.locked_slot": "Locked Slot",
 
     "description.tool.damage": "Damage:",
     "description.tool.damage.slashing": "⚔ Slashing",
     "description.tool.damage.piercing": "↑ Piercing",
     "description.tool.damage.crushing": "✹ Crushing",
-    "description.tool.durability": "Durability:",
     "description.element.air": "≈ Air",
     "description.element.earth": "⏺ Earth",
     "description.element.fire": "🔥 Fire",
@@ -103,5 +103,10 @@
     "item.gaeacraft.geo_res.sapphire": "Sapphire",
 
     "item.gaeacraft.frond": "Frond",
-    "item.gaeacraft.frond_yarn": "Frond Yarn"
+    "item.gaeacraft.frond_yarn": "Frond Yarn",
+
+    "item.gaeacraft.tool_part.stone_axe_head": "Stone Axe Head",
+    "item.gaeacraft.tool_part.stone_hoe_head": "Stone Hoe Head",
+    "item.gaeacraft.tool_part.stone_hammer_head": "Stone Hammer Head",
+    "item.gaeacraft.tool_part.stone_shovel_head": "Stone Shovel Head"
 }

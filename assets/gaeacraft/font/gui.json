@@ -17,6 +17,15 @@
             "chars": [
                 "\uE001"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "gaeacraft:gui/knapping.png",
+            "ascent": 12,
+            "height": 256,
+            "chars": [
+                "\uE002"
+            ]
         }
     ]
 }

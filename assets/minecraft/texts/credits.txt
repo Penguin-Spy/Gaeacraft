@@ -19,7 +19,7 @@
 §f          Aeldrion        - AESTD tag library
 §f          Legitimoose     - Eye of Ender right-clicking
 
-§7Custom Crafting Table
+§7Custom Crafting Table (currently not included)
 §f          _RedCoal_       - Datapack
 §f          Hardel          - Website: https://hardel.fr/generator/crafting
 §f          JeffWooden_     - Custom Crafting Table block

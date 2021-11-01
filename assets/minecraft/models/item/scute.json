@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/scute"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:item/stone_axe_head"},
+    { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:item/stone_hoe_head"},
+    { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:item/stone_hammer_head"},
+    { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:item/stone_shovel_head"}
+  ]
+}

@@ -4,6 +4,10 @@ execute as @a[tag=!global.ignore] run function gaeacraft:init/player
 #0,0 Chunk
 function gaeacraft:init/chunk_0_0
 
+# no collision team
+team add gaeacraft.noClip
+team modify gaeacraft.noClip collisionRule never
+
 #Scoreboards
 scoreboard objectives add gaeacraft.ver dummy
 scoreboard players set $major gaeacraft.ver 0

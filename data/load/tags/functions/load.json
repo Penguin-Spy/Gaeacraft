@@ -1,5 +1,5 @@
 {
-    "values": [
-        "custom_crafting_table:load"
-    ]
+  "values": [
+    {"id": "custom_crafting_table:load", "required": false}
+  ]
 }

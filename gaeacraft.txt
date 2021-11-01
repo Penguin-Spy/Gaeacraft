@@ -11,9 +11,10 @@ Custom Model Data Database:
       Minerals:             115-    129     (e)
       Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
       Rocks:                200-    209
-    Tool parts:         0000400-0000599     (tool heads, bindings, rods, etc. NOT MATERIALS)
-    Materials:          0000600-?
-      Frond Yarn            600
+
+  Scute:
+    Tool parts:         0000001-0000499     (tool heads, bindings, rods, etc. NOT MATERIALS)
+      Stone:                  1-      4     (axe hoe hammer shovel)
 
   Eye of Ender:
     Materials:          0000100->
@@ -67,6 +68,8 @@ gaeacraft:icons
   E01F - E023: armor
 gaeacraft:gui
   E000: crafting
+  E001: crafting_book
+  E002: knapping
 
 blocks:
   0 0 0 oak_sign
@@ -100,6 +103,8 @@ Tags:
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
   gaeacraft.block.ore:  Is an ore block armorstand
   gaeacraft.player.holding_tool: the player is holding a tool
+  gaeacraft.player.can_knap: knapping gui minecart exists
+  gaeacraft.gui_cart.knapping: a minecart used for the knapping gui
 
 
 - Gaeacraft - Item texture:   Manual    (textures/item/geo_res/<name>.png)
