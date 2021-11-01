@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "on_join": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "gaeacraft:init/player"
+  }
+}

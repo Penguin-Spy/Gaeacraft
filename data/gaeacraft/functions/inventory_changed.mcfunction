@@ -12,7 +12,6 @@ execute if entity @s[gamemode=!creative,tag=gaeacraft.player.holding_tool,predic
 
 #Knapping gui
 execute if entity @s[tag=!gaeacraft.player.can_knap,predicate=gaeacraft:can_knap] run function gaeacraft:gui/knapping/start
-execute if entity @s[tag=gaeacraft.player.can_knap,predicate=!gaeacraft:can_knap] run say from inv_change:
 execute if entity @s[tag=gaeacraft.player.can_knap,predicate=!gaeacraft:can_knap] run function gaeacraft:gui/knapping/end
 
 #prevent shift+clicking of helmets (and player heads, like the custom blocks)

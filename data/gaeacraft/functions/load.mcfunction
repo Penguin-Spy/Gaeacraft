@@ -1,6 +1,4 @@
 # Initalize various things
-#Players
-execute as @a[tag=!global.ignore] run function gaeacraft:init/player
 #0,0 Chunk
 function gaeacraft:init/chunk_0_0
 
