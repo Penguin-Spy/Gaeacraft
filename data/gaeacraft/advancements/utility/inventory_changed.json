@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "change": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "function": "gaeacraft:check_inventory_changed"
+  }
+}

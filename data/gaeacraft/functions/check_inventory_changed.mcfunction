@@ -1,0 +1,1 @@
+execute unless entity @s[tag=gaeacraft.player.ignore_inventory_changed] run function gaeacraft:inventory_changed

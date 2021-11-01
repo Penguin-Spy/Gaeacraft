@@ -21,11 +21,9 @@ scoreboard objectives add gaeacraft.durab dummy
 
 #used as temp scoreboard, but not named temp because temperature is stored in temp. yeah, weird naming, but idc
 scoreboard objectives add gaeacraft.count dummy
+scoreboard objectives add gaeacraft.hotbar dummy
 scoreboard objectives add gaeacraft.player dummy
 scoreboard objectives add gaeacraft.sneakT minecraft.custom:minecraft.sneak_time
-
-scoreboard objectives add gaeacraft.craftX dummy
-scoreboard objectives add gaeacraft.craftY dummy
 
 #player data
 scoreboard objectives add gaeacraft.health health

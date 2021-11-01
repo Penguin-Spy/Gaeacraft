@@ -1,10 +1,11 @@
 ##does all the things!
 #well, not all the things, but the things that need to happen constantly
 
+##Slot change detection
+#Detecting when the player changes their selected hotbar slot + inventory change detection (using an advancement) will
+#drastically reduce the number of checks that must happen every tick for every player
+execute as @a run function gaeacraft:check_hotbar_slot
 
-#Mining fatigue / Adventure mode
-execute as @a[gamemode=!creative,tag=!gaeacraft.player.holding_tool,predicate=gaeacraft:holding_tool] run function gaeacraft:tools/start_holding
-execute as @a[gamemode=!creative,tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
 
 #deleting invisible item frames (from generated ground resources)
 execute as @e[type=minecraft:item_frame,nbt={Invisible:1b},nbt=!{Item:{}}] run kill @s
@@ -15,15 +16,8 @@ execute as @a[gamemode=!creative] run function gaeacraft:hud/main
 #Set display tile of normal minecarts
 execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run function gaeacraft:gui/invisible_minecarts
 
-#knapping gui
-execute as @a[tag=!gaeacraft.player.can_knap,predicate=gaeacraft:can_knap] run function gaeacraft:gui/knapping/start
-execute as @a[tag=gaeacraft.player.can_knap,predicate=!gaeacraft:can_knap] run function gaeacraft:gui/knapping/end
+# Knapping gui ticking
 execute at @a[tag=gaeacraft.player.can_knap] as @e[type=armor_stand,tag=gaeacraft.gui_cart.knapping] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run function gaeacraft:gui/knapping/main
-
-#prevent shift+clicking of helmets (and player heads, like the custom blocks)
-#this does not fix the fact that you can still place them on manually, with a stack of one, but it makes inventory management much less annoying.
-execute as @a unless data entity @s Inventory[{Slot:103b,id:"minecraft:feather"}] run clear @s minecraft:feather{CustomModelData:3}
-execute as @a unless data entity @s Inventory[{Slot:103b}] run item replace entity @s armor.head with minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
 
 # ore mining
 execute as @e[type=armor_stand,tag=gaeacraft.block.ore] at @s unless block ~ ~ ~ black_stained_glass run function gaeacraft:blocks/geo_res/remove
