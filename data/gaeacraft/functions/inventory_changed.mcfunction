@@ -4,6 +4,9 @@
 #clear the advancement that may have triggered this
 advancement revoke @s only gaeacraft:utility/inventory_changed
 
+# prevent this from retriggering itself
+tag @s add gaeacraft.player.ignore_inventory_changed
+
 ## Checks
 
 #Mining fatigue / Adventure mode
@@ -22,3 +25,5 @@ execute if entity @s[tag=gaeacraft.player.gui_available.toolmaking,predicate=!ga
 #this does not fix the fact that you can still place them on manually, with a stack of one, but it makes inventory management much less annoying.
 execute unless data entity @s Inventory[{Slot:103b,id:"minecraft:feather"}] run clear @s minecraft:feather{CustomModelData:3}
 execute unless data entity @s Inventory[{Slot:103b}] run item replace entity @s armor.head with minecraft:feather{CustomModelData:3,display:{Name:'{"translate":"empty"}'}}
+
+tag @s remove gaeacraft.player.ignore_inventory_changed
