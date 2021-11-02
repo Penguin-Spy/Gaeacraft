@@ -5,4 +5,4 @@ execute at @s run summon armor_stand ~ ~1.25 ~ {NoGravity:1b,Invulnerable:1b,Mar
 scoreboard players operation @e[tag=gaeacraft.just_summoned] gaeacraft.player = @s gaeacraft.player
 tag @e[tag=gaeacraft.just_summoned] remove gaeacraft.just_summoned
 
-tag @s add gaeacraft.player.can_knap
+tag @s add gaeacraft.player.gui_available.knapping

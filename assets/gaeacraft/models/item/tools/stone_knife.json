@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gaeacraft:item/tools/stone_knife"
+  }
+}

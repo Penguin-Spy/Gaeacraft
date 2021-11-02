@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:stone_shovel",Count:1b,tag:{CustomModelData:1,CanDestroy:["#minecraft:mineable/shovel"],CanPlaceOn:["#gaeacraft:placeable/shovel"],HideFlags:24}}
+tag @s add gaeacraft.gui_cart.toolmaking.has_output

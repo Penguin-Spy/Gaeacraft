@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:stone_pickaxe",Count:1b,tag:{CustomModelData:1000100,CanDestroy:["#gaeacraft:mineable/hammer"],HideFlags:8,display:{Name:'{"translate":"item.gaeacraft.tool.stone_hammer","italic":false}'}}}
+tag @s add gaeacraft.gui_cart.toolmaking.has_output

@@ -38,6 +38,7 @@
 
     "container.knapping": "Knapping",
     "container.knapping.button": "Click to carve away",
+    "container.toolmaking": "Toolmaking",
 
     "container.crafting.locked_slot": "Locked Slot",
 
@@ -108,5 +109,13 @@
     "item.gaeacraft.tool_part.stone_axe_head": "Stone Axe Head",
     "item.gaeacraft.tool_part.stone_hoe_head": "Stone Hoe Head",
     "item.gaeacraft.tool_part.stone_hammer_head": "Stone Hammer Head",
-    "item.gaeacraft.tool_part.stone_shovel_head": "Stone Shovel Head"
+    "item.gaeacraft.tool_part.stone_shovel_head": "Stone Shovel Head",
+    "item.gaeacraft.tool_part.stone_knife_head": "Stone Knife Blade",
+    "item.gaeacraft.tool_part.stone_arrow_head": "Stone Arrowhead",
+
+    "item.gaeacraft.tool_part.wooden_handle": "Wooden Handle",
+
+    "item.gaeacraft.tool.stone_hammer": "Stone Hammer",
+    "item.gaeacraft.tool.stone_knife": "Stone Knife",
+    "item.gaeacraft.tool.stone_spear": "Stone Spear"
 }

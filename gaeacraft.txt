@@ -25,6 +25,13 @@ Custom Model Data Database:
       Crafting Grid:          1
       Autocrafter:            2
 
+  Tools: (applies to all)
+    Key:                 Tmmbbrr
+    T  = type (0 = base, 1 = hammer, 2 = knife, 3 = spear)
+    mm = materal (for base tool items that support multiple materials [iron_pickaxe])
+    bb = binding
+    rr = tool rod/handle
+
   Stone (item):         0000001-0000008
 
   Iron ore (item):
@@ -103,7 +110,8 @@ Tags:
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
   gaeacraft.block.ore:  Is an ore block armorstand
   gaeacraft.player.holding_tool: the player is holding a tool
-  gaeacraft.player.can_knap: knapping gui minecart exists
+  gaeacraft.player.gui_available.knapping: knapping gui minecart exists
+  gaeacraft.player.gui_available.toolmaking: toolmaking gui minecart exists
   gaeacraft.gui_cart.knapping: a minecart used for the knapping gui
 
 

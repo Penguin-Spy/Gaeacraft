@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:stone_sword",Count:1b,tag:{CustomModelData:3000100,CanDestroy:["#gaeacraft:mineable/spear"],HideFlags:8,display:{Name:'{"translate":"item.gaeacraft.tool.stone_spear","italic":false}'}}}
+tag @s add gaeacraft.gui_cart.toolmaking.has_output

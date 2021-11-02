@@ -1,0 +1,2 @@
+data modify entity @s Items append value {Slot:15b,id:"minecraft:stone_hoe",Count:1b,tag:{CustomModelData:1,CanDestroy:["#minecraft:mineable/hoe"],HideFlags:8}}
+tag @s add gaeacraft.gui_cart.toolmaking.has_output

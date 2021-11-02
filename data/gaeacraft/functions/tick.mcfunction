@@ -16,8 +16,9 @@ execute as @a[gamemode=!creative] run function gaeacraft:hud/main
 #Set display tile of normal minecarts
 execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run function gaeacraft:gui/invisible_minecarts
 
-# Knapping gui ticking
-execute at @a[tag=gaeacraft.player.can_knap] as @e[type=armor_stand,tag=gaeacraft.gui_cart.knapping] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run function gaeacraft:gui/knapping/main
+# minecart gui ticking
+execute at @a[tag=gaeacraft.player.gui_available.knapping] as @e[type=armor_stand,tag=gaeacraft.gui_cart.knapping] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run function gaeacraft:gui/knapping/main
+execute at @a[tag=gaeacraft.player.gui_available.toolmaking] as @e[type=armor_stand,tag=gaeacraft.gui_cart.toolmaking] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run function gaeacraft:gui/toolmaking/main
 
 # ore mining
 execute as @e[type=armor_stand,tag=gaeacraft.block.ore] at @s unless block ~ ~ ~ black_stained_glass run function gaeacraft:blocks/geo_res/remove

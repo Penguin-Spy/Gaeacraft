@@ -26,6 +26,15 @@
             "chars": [
                 "\uE002"
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "gaeacraft:gui/toolmaking.png",
+            "ascent": 12,
+            "height": 256,
+            "chars": [
+                "\uE003"
+            ]
         }
     ]
 }

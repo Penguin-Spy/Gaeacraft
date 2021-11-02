@@ -11,8 +11,12 @@ execute if entity @s[gamemode=!creative,tag=!gaeacraft.player.holding_tool,predi
 execute if entity @s[gamemode=!creative,tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
 
 #Knapping gui
-execute if entity @s[tag=!gaeacraft.player.can_knap,predicate=gaeacraft:can_knap] run function gaeacraft:gui/knapping/start
-execute if entity @s[tag=gaeacraft.player.can_knap,predicate=!gaeacraft:can_knap] run function gaeacraft:gui/knapping/end
+execute if entity @s[tag=!gaeacraft.player.gui_available.knapping,predicate=gaeacraft:gui_available/knapping] run function gaeacraft:gui/knapping/start
+execute if entity @s[tag=gaeacraft.player.gui_available.knapping,predicate=!gaeacraft:gui_available/knapping] run function gaeacraft:gui/knapping/end
+
+#Toolmaking gui
+execute if entity @s[tag=!gaeacraft.player.gui_available.toolmaking,predicate=gaeacraft:gui_available/toolmaking] run function gaeacraft:gui/toolmaking/start
+execute if entity @s[tag=gaeacraft.player.gui_available.toolmaking,predicate=!gaeacraft:gui_available/toolmaking] run function gaeacraft:gui/toolmaking/end
 
 #prevent shift+clicking of helmets (and player heads, like the custom blocks)
 #this does not fix the fact that you can still place them on manually, with a stack of one, but it makes inventory management much less annoying.
