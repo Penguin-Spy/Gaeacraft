@@ -57,13 +57,13 @@ execute positioned ~4 ~ ~-4 if block ~ ~ ~ #gaeacraft:detect_placed run function
 execute positioned ~4 ~ ~-3 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~4 ~ ~3 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~4 ~ ~4 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
-#execute positioned ~4 ~ ~5 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
+execute positioned ~4 ~ ~5 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 
 #Z = 5
 execute positioned ~5 ~ ~-3 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~5 ~ ~-2 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~5 ~ ~-1 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~5 ~ ~ if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
-execute positioned ~5 ~ ~1 if block ~ ~ ~ #gaeacraft:detect_placed run setblock ~ ~ ~ sponge
+execute positioned ~5 ~ ~1 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~5 ~ ~2 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
 execute positioned ~5 ~ ~3 if block ~ ~ ~ #gaeacraft:detect_placed run function gaeacraft:blocks/detect/convert
