@@ -8,7 +8,11 @@
         { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:empty"},
         { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:gui/helmet"},
 
-        { "predicate": { "custom_model_data": 10}, "model": "gaeacraft:item/knapping_button"},
+        { "predicate": { "custom_model_data": 10}, "model": "gaeacraft:gui/knapping_button"},
+        { "predicate": { "custom_model_data": 11}, "model": "gaeacraft:gui/toolmaking/handle"},
+        { "predicate": { "custom_model_data": 12}, "model": "gaeacraft:gui/toolmaking/binding"},
+        { "predicate": { "custom_model_data": 13}, "model": "gaeacraft:gui/toolmaking/one_head"},
+        { "predicate": { "custom_model_data": 14}, "model": "gaeacraft:gui/toolmaking/two_heads"},
 
         { "predicate": { "custom_model_data": 101}, "model": "gaeacraft:item/geo_res/bismuthinite"},
         { "predicate": { "custom_model_data": 102}, "model": "gaeacraft:item/geo_res/cassiterite"},

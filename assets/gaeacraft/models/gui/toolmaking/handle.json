@@ -1,0 +1,6 @@
+{
+  "parent": "gaeacraft:gui/toolmaking/base",
+  "textures": {
+    "texture": "gaeacraft:gui/toolmaking/handle"
+  }
+}

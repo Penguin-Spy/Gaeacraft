@@ -1,11 +1,25 @@
 # detects if there is a recipe in the table
-# unless data entity @s Items[{Slot:1b}] unless data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] unless data entity @s Items[{Slot:10b}] unless data entity @s Items[{Slot:11b}] unless data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}]
 
-execute store success score $success gaeacraft.count run data remove entity @s Items[{Slot:15b}]
-execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.has_output] if score $success gaeacraft.count matches 0 at @s as @a[tag=gaeacraft.player.gui_available.toolmaking] if score @s gaeacraft.player = @e[type=chest_minecart,tag=gaeacraft.gui_cart.toolmaking.has_output,sort=nearest,limit=1] gaeacraft.player run function gaeacraft:gui/toolmaking/finish
+# if outputting & no 15, run :finish
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.toolmaking.has_output] unless data entity @s Items[{Slot:15b}] as @p[tag=gaeacraft.temp.minecart_gui,limit=1] run function gaeacraft:gui/toolmaking/finish
 
+
+# if not outputting & 15, run :dump_output
+execute if entity @s[tag=!gaeacraft.gui_cart.toolmaking.has_output] if data entity @s Items[{Slot:15b}] run function gaeacraft:gui/dump_output
+
+# store success if outputting & 15, copy 15 to armorstand data.15
+scoreboard players set $success gaeacraft.count 0
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.has_output] if data entity @s Items[{Slot:15b}] store success score $success gaeacraft.count run data modify entity @e[type=armor_stand,tag=gaeacraft.temp.minecart_gui,limit=1] ArmorItems[3].tag.output set from entity @s Items[{Slot:15b}]
+# if success, run :dump_output
+execute if score $success gaeacraft.count matches 1 run function gaeacraft:gui/dump_output
+execute if score $success gaeacraft.count matches 1 as @p[tag=gaeacraft.temp.minecart_gui,limit=1] run function gaeacraft:gui/toolmaking/finish
+
+# clear 15
+# clear outputting
+data remove entity @s Items[{Slot:15b}]
 tag @s remove gaeacraft.gui_cart.toolmaking.has_output
 
+##Recipes
 
 # stone axe
 execute if data entity @s Items[{Slot:1b,id:"minecraft:scute",tag:{CustomModelData:1}}] if data entity @s Items[{Slot:11b,id:"minecraft:feather",tag:{CustomModelData:600}}] if data entity @s Items[{Slot:19b,id:"minecraft:stick"}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/toolmaking/output/stone_axe
@@ -24,3 +38,11 @@ execute if data entity @s Items[{Slot:1b,id:"minecraft:scute",tag:{CustomModelDa
 
 # stone knife
 execute if data entity @s Items[{Slot:1b,id:"minecraft:scute",tag:{CustomModelData:6}}] if data entity @s Items[{Slot:11b,id:"minecraft:feather",tag:{CustomModelData:600}}] if data entity @s Items[{Slot:19b,id:"minecraft:stick"}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/toolmaking/output/stone_knife
+
+##End Recipes
+
+#END: if outputting, copy 15 to armorstand data.15
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.has_output] run data modify entity @e[type=armor_stand,tag=gaeacraft.temp.minecart_gui,limit=1] ArmorItems[3].tag.output set from entity @s Items[{Slot:15b}]
+
+# clear tags used to keep track of the entities we need to reference during this function
+tag @e[tag=gaeacraft.temp.minecart_gui] remove gaeacraft.temp.minecart_gui

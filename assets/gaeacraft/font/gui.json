@@ -29,7 +29,7 @@
         },
         {
             "type": "bitmap",
-            "file": "gaeacraft:gui/toolmaking.png",
+            "file": "gaeacraft:gui/toolmaking/base.png",
             "ascent": 12,
             "height": 256,
             "chars": [

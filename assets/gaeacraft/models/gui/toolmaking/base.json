@@ -1,0 +1,24 @@
+{
+  "gui_light": "front",
+  "elements": [
+    {
+      "from": [ -4, -4, 0 ],
+      "to": [ 32, 32, 1 ],
+      "faces": {
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+      }
+    }
+  ],
+  "display": {
+    "firstperson_lefthand": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0, 0, 0 ]
+    },
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ -33, 21, 0 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  }
+}

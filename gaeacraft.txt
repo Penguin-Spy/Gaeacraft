@@ -5,7 +5,8 @@ Custom Model Data Database:
       Empty:                  2
       Helmet Icon:            3             (Invisible on the player's head, but displays the helmet icon in the inventory)
     Widget Items:       0000010-0000099
-      Knapping button(s?):   10-     19
+      Knapping button(s?):   10
+      Toolmaking Gui:        11-     14
     Materials:          0000100-0000399
       Ores:                 100-    114     (These 2 basically just are the same section)
       Minerals:             115-    129     (e)
@@ -113,6 +114,18 @@ Tags:
   gaeacraft.player.gui_available.knapping: knapping gui minecart exists
   gaeacraft.player.gui_available.toolmaking: toolmaking gui minecart exists
   gaeacraft.gui_cart.knapping: a minecart used for the knapping gui
+
+When adding a new minecart_gui specific lines must be added to the following functions:
+  inventory_changed.mcfunction
+  start.mcfunction
+  change.mcfunction
+  end.mcfunction
+and a copy must be made of:
+  <GUI_NAME>/start
+  <GUI_NAME>/detect
+  <GUI_NAME>/finish
+  and any <GUI_NAME>/output/
+
 
 
 - Gaeacraft - Item texture:   Manual    (textures/item/geo_res/<name>.png)

@@ -7,4 +7,4 @@ item modify entity @s weapon.mainhand gaeacraft:remove_one
 item modify entity @s weapon.offhand gaeacraft:remove_one
 tag @s remove gaeacraft.player.ignore_inventory_changed
 
-function gaeacraft:gui/knapping/end
+function gaeacraft:gui/end
