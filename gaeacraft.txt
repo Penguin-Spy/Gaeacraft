@@ -13,6 +13,8 @@ Custom Model Data Database:
       Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
       Rocks:                200-    209
 
+      Frond Yarn:           600
+
   Scute:
     Tool parts:         0000001-0000499     (tool heads, bindings, rods, etc. NOT MATERIALS)
       Stone:                  1-      4     (axe hoe hammer shovel)
