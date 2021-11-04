@@ -7,15 +7,15 @@ function gaeacraft:gui/toolmaking/fix_widgets
 # only dump sometimes
 #OR
 # tag items we want to keep,
-execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.binding] run data modify entity @s Items[{Slot:11b}] merge value {tag:{gaeacraft:{gui_dont_dump:1b}}}
-execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.one_head] run data modify entity @s Items[{Slot:3b}] merge value {tag:{gaeacraft:{gui_dont_dump:1b}}}
-execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.two_heads] run data modify entity @s Items[{Slot:2b}] merge value {tag:{gaeacraft:{gui_dont_dump:1b}}}
-execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.two_heads] run data modify entity @s Items[{Slot:12b}] merge value {tag:{gaeacraft:{gui_dont_dump:1b}}}
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.binding] run data modify entity @s Items[{Slot:11b}] merge value {tag:{gaeacraft_temp:{gui_dont_dump:1b}}}
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.one_head] run data modify entity @s Items[{Slot:3b}] merge value {tag:{gaeacraft_temp:{gui_dont_dump:1b}}}
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.two_heads] run data modify entity @s Items[{Slot:2b}] merge value {tag:{gaeacraft_temp:{gui_dont_dump:1b}}}
+execute if entity @s[tag=gaeacraft.gui_cart.toolmaking.two_heads] run data modify entity @s Items[{Slot:12b}] merge value {tag:{gaeacraft_temp:{gui_dont_dump:1b}}}
 #data modify entity @s Items[].Count set value 2
 function gaeacraft:gui/dump
 # (which would treat the items we've tagged the same as gui_items)
 # then clear the tag
-data remove entity @s Items[{tag:{gaeacraft:{gui_dont_dump:1b}}}].tag.gaeacraft
+data remove entity @s Items[{tag:{gaeacraft_temp:{}}}].tag.gaeacraft_temp
 
 
 # if outputting & no 15, run :finish

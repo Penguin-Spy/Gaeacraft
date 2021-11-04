@@ -6,7 +6,7 @@ execute at @s as @e[type=armor_stand,tag=gaeacraft.gui_cart] if score @s gaeacra
 execute at @s as @e[type=chest_minecart,tag=gaeacraft.gui_cart] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run tag @s add gaeacraft.temp.minecart_gui
 
 # dump the gui to clear out all player items
-function gaeacraft:gui/dump
+execute as @e[type=chest_minecart,tag=gaeacraft.gui_cart] run function gaeacraft:gui/dump
 
 execute as @e[type=chest_minecart,tag=gaeacraft.temp.minecart_gui,limit=1] run data remove entity @s Items
 execute as @e[type=!player,tag=gaeacraft.temp.minecart_gui] run kill @s
