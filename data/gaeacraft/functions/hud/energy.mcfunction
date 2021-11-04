@@ -5,7 +5,7 @@
 
 #Determine the character, and prepend it to previous text
 execute if score $temp gaeacraft.count matches 4.. run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE015"}]}'
-execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE0116"}]}'
+execute if score $temp gaeacraft.count matches 3 run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE016"}]}'
 execute if score $temp gaeacraft.count matches 2 run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE017"}]}'
 execute if score $temp gaeacraft.count matches 1 run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE018"}]}'
 execute if score $temp gaeacraft.count matches ..0 run data modify storage gaeacraft:hud energy prepend value '{"translate":"space.-2","with":[{"font":"gaeacraft:icons","text":"\\uE019"}]}'
