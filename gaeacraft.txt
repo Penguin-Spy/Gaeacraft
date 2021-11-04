@@ -110,10 +110,16 @@ Tags:
   gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
   gaeacraft.block.ore:  Is an ore block armorstand
+
+  gaeacraft.fishing_armor_stand: tag for the "fishing armor_stand", used for /loot with a tool with nbt
+
   gaeacraft.player.holding_tool: the player is holding a tool
+
   gaeacraft.player.gui_available.knapping: knapping gui minecart exists
+  gaeacraft.player.gui_available.knapping.has_output: knapping gui minecart is displaying an output item
   gaeacraft.player.gui_available.toolmaking: toolmaking gui minecart exists
-  gaeacraft.gui_cart.knapping: a minecart used for the knapping gui
+    gaeacraft.player.gui_available.toolmaking.[handle|binding|one_head|two_heads]: multiple are allowed, signify which slots are enabled
+  gaeacraft.temp.minecart_gui: this entity is part of a minecart_gui that's currently being processed
 
 When adding a new minecart_gui specific lines must be added to the following functions:
   inventory_changed.mcfunction

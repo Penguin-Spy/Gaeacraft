@@ -1,5 +1,7 @@
 # detects if there is a recipe in the table
 
+function gaeacraft:gui/dump
+
 # if outputting & no 15, run :finish
 execute if entity @s[tag=gaeacraft.gui_cart.knapping.has_output] unless data entity @s Items[{Slot:15b}] as @p[tag=gaeacraft.temp.minecart_gui,limit=1] run function gaeacraft:gui/knapping/finish
 
@@ -44,6 +46,3 @@ execute unless data entity @s Items[{Slot:1b}] unless data entity @s Items[{Slot
 
 #END: if outputting, copy 15 to armorstand data.15
 execute if entity @s[tag=gaeacraft.gui_cart.knapping.has_output] run data modify entity @e[type=armor_stand,tag=gaeacraft.temp.minecart_gui,limit=1] ArmorItems[3].tag.output set from entity @s Items[{Slot:15b}]
-
-# clear tags used to keep track of the entities we need to reference during this function
-tag @e[tag=gaeacraft.temp.minecart_gui] remove gaeacraft.temp.minecart_gui

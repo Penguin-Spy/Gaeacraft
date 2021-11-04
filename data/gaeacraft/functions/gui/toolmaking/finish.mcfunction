@@ -6,4 +6,4 @@ tag @s add gaeacraft.player.ignore_inventory_changed
 item modify entity @s weapon.mainhand gaeacraft:remove_one
 tag @s remove gaeacraft.player.ignore_inventory_changed
 
-function gaeacraft:gui/toolmaking/end
+function gaeacraft:gui/end
