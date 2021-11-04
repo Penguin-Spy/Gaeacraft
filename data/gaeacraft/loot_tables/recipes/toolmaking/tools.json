@@ -1,1 +1,28 @@
-{}
+{"type": "minecraft:fishing","pools": [{"rolls": 1,"entries": [{"type": "minecraft:item",
+  "name": "minecraft:stone_axe","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:1,CanDestroy:[\"#minecraft:mineable/axe\"],HideFlags:8}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:1}}}}"}}]}, {"type": "minecraft:item",
+
+  "name": "minecraft:stone_hoe","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:1,CanDestroy:[\"#minecraft:mineable/hoe\"],CanPlaceOn:[\"#gaeacraft:placeable/hoe\"],HideFlags:24}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:2}}}}"}}]}, {"type": "minecraft:item",
+
+  "name": "minecraft:stone_pickaxe","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:1000100,CanDestroy:[\"#gaeacraft:mineable/hammer\"],HideFlags:8,display:{Name:'{\"translate\":\"item.gaeacraft.tool.stone_hammer\",\"italic\":false}'}}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:3}}}}"}}]}, {"type": "minecraft:item",
+
+  "name": "minecraft:stone_shovel","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:1,CanDestroy:[\"#minecraft:mineable/shovel\"],CanPlaceOn:[\"#gaeacraft:placeable/shovel\"],HideFlags:24}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:4}}}}"}}]}, {"type": "minecraft:item",
+
+  "name": "minecraft:stone_sword","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:3000100,CanDestroy:[\"#gaeacraft:mineable/spear\"],HideFlags:8,display:{Name:'{\"translate\":\"item.gaeacraft.tool.stone_spear\",\"italic\":false}'}}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:5}}}}"}}]}, {"type": "minecraft:item",
+
+  "name": "minecraft:stone_sword","functions": [{"function": "minecraft:set_nbt",
+  "tag": "{CustomModelData:2000100,CanDestroy:[\"#gaeacraft:mineable/knife\"],HideFlags:8,display:{Name:'{\"translate\":\"item.gaeacraft.tool.stone_knife\",\"italic\":false}'}}"}],"conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{toolmaking:{handle:{id:\"minecraft:stick\"}, binding:{id:\"minecraft:feather\",tag:{CustomModelData:600}}, one_head:{id:\"minecraft:scute\",tag:{CustomModelData:6}}}}"}}]}
+      ]
+    }
+  ]
+}

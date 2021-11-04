@@ -1,2 +1,0 @@
-data modify entity @s Items append value {Slot:15b,id:"scute",Count:1b,tag:{CustomModelData:4,display:{Name:'{"translate":"item.gaeacraft.tool_part.stone_shovel_head","italic":false}'}}}
-tag @s add gaeacraft.gui_cart.knapping.has_output

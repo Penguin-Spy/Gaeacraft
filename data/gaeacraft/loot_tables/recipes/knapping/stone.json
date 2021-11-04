@@ -1,0 +1,31 @@
+{"type": "minecraft:fishing","pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","name": "minecraft:scute","functions": [ {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:1,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_axe_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:alternative","terms": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:1b,c:1b, d:1b,e:1b,f:1b, g:0b,h:1b,i:0b}}}"}},{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:0b, d:1b,e:1b,f:1b, g:0b,h:1b,i:0b}}}"}}]}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:2,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_hoe_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:alternative","terms": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:1b, d:0b,e:0b,f:1b, g:0b,h:0b,i:0b}}}"}},{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:1b, d:1b,e:0b,f:0b, g:0b,h:0b,i:0b}}}"}}]}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:3,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_hammer_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:1b, d:1b,e:1b,f:1b, g:0b,h:0b,i:0b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:4,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_shovel_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:1b, d:1b,e:1b,f:1b, g:0b,h:1b,i:0b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:5,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_arrow_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:1b,c:0b, d:1b,e:1b,f:1b, g:1b,h:0b,i:1b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:6,display:{Name:'{\"translate\":\"item.gaeacraft.tool_part.stone_knife_head\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:alternative","terms": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:0b, d:1b,e:1b,f:0b, g:1b,h:0b,i:0b}}}"}},{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:1b,c:1b, d:0b,e:1b,f:1b, g:0b,h:0b,i:1b}}}"}},{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:0b, d:1b,e:1b,f:0b, g:0b,h:1b,i:0b}}}"}},{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:1b,c:1b, d:0b,e:1b,f:1b, g:0b,h:1b,i:0b}}}"}}]}]}
+
+          ]
+        }
+      ]
+    }
+  ]
+}

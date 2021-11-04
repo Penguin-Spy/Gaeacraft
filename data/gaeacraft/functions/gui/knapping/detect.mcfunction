@@ -21,25 +21,29 @@ execute if score $success gaeacraft.count matches 1 as @p[tag=gaeacraft.temp.min
 data remove entity @s Items[{Slot:15b}]
 tag @s remove gaeacraft.gui_cart.knapping.has_output
 
+
 ##Recipes
 
-#axe
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] if data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/axe
-execute unless data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] if data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/axe
-#hoe
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] unless data entity @s Items[{Slot:11b}] unless data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/hoe
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] unless data entity @s Items[{Slot:10b}] unless data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/hoe
-#hammer
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/hammer
-#shovel
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] if data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/shovel
-#arrowhead
-execute unless data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] if data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] if data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/arrow
-#knife blade
-execute if data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] if data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] unless data entity @s Items[{Slot:12b}] if data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/knife
-execute unless data entity @s Items[{Slot:1b}] if data entity @s Items[{Slot:2b}] if data entity @s Items[{Slot:3b}] unless data entity @s Items[{Slot:10b}] if data entity @s Items[{Slot:11b}] if data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] if data entity @s Items[{Slot:21b}] run function gaeacraft:gui/knapping/output/knife
+# copy slots 1-9 to fishing armor_stand's rod (incl. empty slots)
+data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping set value {slots:{a:0b,b:0b,c:0b,d:0b,e:0b,f:0b,g:0b,h:0b,i:0b}}
+execute if data entity @s Items[{Slot:1b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.a set value 1b
+execute if data entity @s Items[{Slot:2b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.b set value 1b
+execute if data entity @s Items[{Slot:3b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.c set value 1b
+execute if data entity @s Items[{Slot:10b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.d set value 1b
+execute if data entity @s Items[{Slot:11b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.e set value 1b
+execute if data entity @s Items[{Slot:12b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.f set value 1b
+execute if data entity @s Items[{Slot:19b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.g set value 1b
+execute if data entity @s Items[{Slot:20b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.h set value 1b
+execute if data entity @s Items[{Slot:21b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.i set value 1b
 
-##End Recipes
+# run loot as fishing_armor_stand
+execute as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/stone ~ ~ ~ mainhand
+# copy to our slot 15 & if item in shulker, add gaeacraft.gui_cart.knapping.has_output
+execute if data block 1 0 0 Items[{Slot:15b}].tag run data modify entity @s Items append from block 1 0 0 Items[{Slot:15b}]
+execute if data entity @s Items[{Slot:15b}] run tag @s add gaeacraft.gui_cart.knapping.has_output
+
+
+##Cleanup
 
 # Close gui (and remove items) if every slot has been clicked
 execute unless data entity @s Items[{Slot:1b}] unless data entity @s Items[{Slot:2b}] unless data entity @s Items[{Slot:3b}] unless data entity @s Items[{Slot:10b}] unless data entity @s Items[{Slot:11b}] unless data entity @s Items[{Slot:12b}] unless data entity @s Items[{Slot:19b}] unless data entity @s Items[{Slot:20b}] unless data entity @s Items[{Slot:21b}] as @p[tag=gaeacraft.temp.minecart_gui,limit=1] run function gaeacraft:gui/knapping/finish
