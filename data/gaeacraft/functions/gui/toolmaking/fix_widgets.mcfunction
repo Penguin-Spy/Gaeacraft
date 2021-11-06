@@ -1,5 +1,14 @@
 #aaaaaaaaaaaaa
 
+# dump any items that are in the widget slots
+data remove block 1 0 0 Items
+data modify block 1 0 0 Items append from entity @s Items[{Slot:19b}]
+data modify block 1 0 0 Items append from entity @s Items[{Slot:22b}]
+
+# give player all remaining items (only ever output slot)
+execute if data block 1 0 0 Items run loot give @p[tag=gaeacraft.temp.minecart_gui,limit=1] mine 1 0 0 air{drop_contents:1b}
+
+
 #eventually when this code gets reused for the tool table, this will need a conditional. we're ignoring that right now :)
 #gaeacraft.gui_cart.toolmaking.force_handle
 data modify entity @s Items append value {Slot:19b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"translate":"item.gaeacraft.tool_part.wooden_handle","italic":false}'},CustomModelData:10,gaeacraft:{gui_item:1b,toolmaking_widget:1b}}}
