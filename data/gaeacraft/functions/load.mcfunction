@@ -10,7 +10,7 @@ team modify gaeacraft.noClip collisionRule never
 scoreboard objectives add gaeacraft.ver dummy
 scoreboard players set $major gaeacraft.ver 0
 scoreboard players set $minor gaeacraft.ver 3
-scoreboard players set $patch gaeacraft.ver 5
+scoreboard players set $patch gaeacraft.ver 6
 
 scoreboard objectives add gaeacraft.const dummy
 scoreboard players set -1 gaeacraft.const -1
