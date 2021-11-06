@@ -9,6 +9,8 @@
     { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:item/tool_parts/stone_hammer_head"},
     { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:item/tool_parts/stone_shovel_head"},
     { "predicate": { "custom_model_data": 5}, "model": "gaeacraft:item/tool_parts/stone_arrow_head"},
-    { "predicate": { "custom_model_data": 6}, "model": "gaeacraft:item/tool_parts/stone_knife_head"}
+    { "predicate": { "custom_model_data": 6}, "model": "gaeacraft:item/tool_parts/stone_knife_head"},
+
+    { "predicate": { "custom_model_data": 1000}, "model": "gaeacraft:item/frond_yarn"}
   ]
 }

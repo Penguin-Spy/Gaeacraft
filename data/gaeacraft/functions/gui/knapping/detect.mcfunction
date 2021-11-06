@@ -37,7 +37,8 @@ execute if data entity @s Items[{Slot:20b}] run data modify entity @e[type=armor
 execute if data entity @s Items[{Slot:21b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.i set value 1b
 
 # run loot as fishing_armor_stand
-execute as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/stone ~ ~ ~ mainhand
+execute if entity @s[tag=gaeacraft.gui_cart.knapping.stone] as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/stone ~ ~ ~ mainhand
+execute if entity @s[tag=gaeacraft.gui_cart.knapping.clay] as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/clay ~ ~ ~ mainhand
 # copy to our slot 15 & if item in shulker, add gaeacraft.gui_cart.knapping.has_output
 execute if data block 1 0 0 Items[{Slot:15b}].tag run data modify entity @s Items append from block 1 0 0 Items[{Slot:15b}]
 execute if data entity @s Items[{Slot:15b}] run tag @s add gaeacraft.gui_cart.knapping.has_output

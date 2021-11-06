@@ -16,7 +16,8 @@ tag @s remove gaeacraft.temp.minecart_gui
 
 # clear tag of what gui this was
 tag @s remove gaeacraft.player.gui_available
-tag @s remove gaeacraft.player.gui_available.knapping
+tag @s remove gaeacraft.player.gui_available.knapping.stone
+tag @s remove gaeacraft.player.gui_available.knapping.clay
 tag @s remove gaeacraft.player.gui_available.toolmaking
 
 # clear button items (if the GUI was closed by the player swapping a stone with a button using the # keys)

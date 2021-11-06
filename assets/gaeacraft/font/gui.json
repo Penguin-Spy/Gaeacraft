@@ -2,7 +2,7 @@
     "providers": [
         {
             "type": "bitmap",
-            "file": "gaeacraft:gui/crafting.png",
+            "file": "gaeacraft:gui/knapping/stone.png",
             "ascent": 12,
             "height": 256,
             "chars": [
@@ -11,7 +11,7 @@
         },
         {
             "type": "bitmap",
-            "file": "gaeacraft:gui/crafting_book.png",
+            "file": "gaeacraft:gui/knapping/clay.png",
             "ascent": 12,
             "height": 256,
             "chars": [
@@ -20,20 +20,11 @@
         },
         {
             "type": "bitmap",
-            "file": "gaeacraft:gui/knapping.png",
-            "ascent": 12,
-            "height": 256,
-            "chars": [
-                "\uE002"
-            ]
-        },
-        {
-            "type": "bitmap",
             "file": "gaeacraft:gui/toolmaking/base.png",
             "ascent": 12,
             "height": 256,
             "chars": [
-                "\uE003"
+                "\uE002"
             ]
         }
     ]

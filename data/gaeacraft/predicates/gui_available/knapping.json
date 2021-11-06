@@ -1,44 +1,13 @@
 {
   "condition": "minecraft:alternative",
   "terms": [
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:200}"}}}
+    {
+      "condition": "minecraft:reference",
+      "name": "gaeacraft:gui_available/knapping_stone"
     },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:201}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:202}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:203}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:204}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:205}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:206}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:207}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:208}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:209}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:210}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:211}"}}}
-    },
-    {"condition": "minecraft:entity_properties","entity": "this","predicate": {"equipment": {"offhand": {"items": ["minecraft:flint"]}, "mainhand": {"items": ["minecraft:feather"],
-      "nbt": "{CustomModelData:212}"}}}
+    {
+      "condition": "minecraft:reference",
+      "name": "gaeacraft:gui_available/knapping_clay"
     }
   ]
 }

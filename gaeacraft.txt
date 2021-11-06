@@ -1,23 +1,33 @@
 Custom Model Data Database:
-  Feather:
+  Feather: (general custom items)
     Special Items:      0000001-0000009
       Error:                  1
       Empty:                  2
       Helmet Icon:            3             (Invisible on the player's head, but displays the helmet icon in the inventory)
     Widget Items:       0000010-0000099
-      Knapping button(s?):   10
       Toolmaking Gui:        11-     14
+      Knapping GUI:          15-     16
+
     Materials:          0000100-0000399
       Ores:                 100-    114     (These 2 basically just are the same section)
       Minerals:             115-    129     (e)
       Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
       Rocks:                200-    209
 
-      Frond Yarn:           600
+    Clay:               0000400-0000499     (unfired, fired)
+      Bowl:                 400-    401     edible food
+      Vessel:               402-    403     solids  (fired will need to be a bundle instead)
+      Jug:                  404-    405     liquids (fired will need to be an empty bottle instead [and use an advancement to update the water bottle when filled])
+      Mold:                 406-    407     ingot/unspecialized
+
 
   Scute:
-    Tool parts:         0000001-0000499     (tool heads, bindings, rods, etc. NOT MATERIALS)
-      Stone:                  1-      4     (axe hoe hammer shovel)
+    Tool Heads:         0000001-0000999
+      Stone:                  1-      6     (axe hoe hammer shovel arrow knife)
+
+    Bindings:           0001000-0001999
+      Frond Yarn:          1000
+
 
   Eye of Ender:
     Materials:          0000100->
@@ -77,9 +87,9 @@ gaeacraft:icons
   E01A - E01E: temperature
   E01F - E023: armor
 gaeacraft:gui
-  E000: crafting
-  E001: crafting_book
-  E002: knapping
+  E000: stone knapping
+  E001: clay knapping
+  E002: toolmaking
 
 blocks:
   0 0 0 oak_sign
@@ -117,7 +127,8 @@ Tags:
 
   gaeacraft.player.holding_tool: the player is holding a tool
 
-  gaeacraft.player.gui_available.knapping: knapping gui minecart exists
+  gaeacraft.player.gui_available.knapping.stone: stone knapping gui minecart exists
+  gaeacraft.player.gui_available.knapping.clay: clay knapping gui minecart exists
   gaeacraft.player.gui_available.knapping.has_output: knapping gui minecart is displaying an output item
   gaeacraft.player.gui_available.toolmaking: toolmaking gui minecart exists
     gaeacraft.player.gui_available.toolmaking.[handle|binding|one_head|two_heads]: multiple are allowed, signify which slots are enabled

@@ -11,7 +11,8 @@ execute if entity @s[gamemode=!creative,tag=!gaeacraft.player.holding_tool,predi
 execute if entity @s[gamemode=!creative,tag=gaeacraft.player.holding_tool,predicate=!gaeacraft:holding_tool] run function gaeacraft:tools/stop_holding
 
 #Minecart gui
-execute if entity @s[tag=gaeacraft.player.gui_available.knapping,predicate=!gaeacraft:gui_available/knapping] run function gaeacraft:gui/end
+execute if entity @s[tag=gaeacraft.player.gui_available.knapping.stone,predicate=!gaeacraft:gui_available/knapping_stone] run function gaeacraft:gui/end
+execute if entity @s[tag=gaeacraft.player.gui_available.knapping.clay,predicate=!gaeacraft:gui_available/knapping_clay] run function gaeacraft:gui/end
 execute if entity @s[tag=gaeacraft.player.gui_available.toolmaking,predicate=!gaeacraft:gui_available/toolmaking] run function gaeacraft:gui/end
 execute if entity @s[tag=!gaeacraft.player.gui_available,predicate=gaeacraft:gui_available/any] run function gaeacraft:gui/start
 

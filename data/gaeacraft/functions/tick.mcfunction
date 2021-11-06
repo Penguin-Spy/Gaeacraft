@@ -21,8 +21,6 @@ execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run f
 
 # minecart gui ticking
 execute as @a[tag=gaeacraft.player.gui_available] at @s run function gaeacraft:gui/set_tags
-#execute as @a[tag=gaeacraft.player.gui_available.knapping] at @s run function gaeacraft:gui/knapping/set_tags
-#execute at @a[tag=gaeacraft.player.gui_available.toolmaking] as @e[type=armor_stand,tag=gaeacraft.gui_cart.toolmaking] if score @s gaeacraft.player = @p[distance=0] gaeacraft.player run function gaeacraft:gui/toolmaking/main
 
 # ore mining
 execute as @e[type=armor_stand,tag=gaeacraft.block.ore] at @s unless block ~ ~ ~ black_stained_glass run function gaeacraft:blocks/geo_res/remove

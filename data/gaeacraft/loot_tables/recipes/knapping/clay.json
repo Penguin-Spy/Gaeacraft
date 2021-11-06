@@ -1,0 +1,15 @@
+{"type": "minecraft:fishing","pools": [{"rolls": 1,"entries": [{"type": "minecraft:item","name": "minecraft:feather","functions": [ {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:400,display:{Name:'{\"translate\":\"item.gaeacraft.clay.unfired_bowl\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:0b,c:0b, d:1b,e:0b,f:1b, g:0b,h:1b,i:0b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:402,display:{Name:'{\"translate\":\"item.gaeacraft.clay.unfired_vessel\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:0b,c:1b, d:1b,e:0b,f:1b, g:1b,h:1b,i:1b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:404,display:{Name:'{\"translate\":\"item.gaeacraft.clay.unfired_jug\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:0b,b:0b,c:0b, d:1b,e:0b,f:1b, g:1b,h:1b,i:1b}}}"}}]}, {"function": "minecraft:set_nbt",
+
+  "tag": "{CustomModelData:406,display:{Name:'{\"translate\":\"item.gaeacraft.clay.unfired_mold\",\"italic\":false}'}}", "conditions": [{"condition": "minecraft:match_tool","predicate": {
+  "nbt": "{knapping:{slots:{a:1b,b:1b,c:1b, d:0b,e:0b,f:0b, g:1b,h:1b,i:1b}}}"}}]}
+
+]}]}]}
