@@ -1,4 +1,4 @@
-#gaeacraft:hud/aura.mcfunction
+#gaeacraft:gui/hud/aura.mcfunction
 #loop for generating the player's aura section of their hud.
 #called once to start creating display, returns full display in 0 0 0's Text1 & Text2
 #E00F - E014: aura
@@ -15,4 +15,4 @@ scoreboard players remove $maxTemp gaeacraft.count 4
 scoreboard players remove $temp gaeacraft.count 4
 
 #loop if there are more characters necessary
-execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:hud/aura
+execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:gui/hud/aura

@@ -4,17 +4,17 @@
 ##Slot change detection
 #Detecting when the player changes their selected hotbar slot + inventory change detection (using an advancement) will
 #drastically reduce the number of checks that must happen every tick for every player
-execute as @a run function gaeacraft:check_hotbar_slot
+execute as @a run function gaeacraft:events/check_hotbar_slot
 
 
 #deleting invisible item frames (from generated ground resources)
 execute as @e[type=minecraft:item_frame,nbt={Invisible:1b},nbt=!{Item:{}}] run kill @s
 
 # Re-initalize players who've respawned (@e[type=player] only selects alive players, @a selects all)
-execute as @e[type=player,scores={gaeacraft.deaths=1..}] run function gaeacraft:init/player
+execute as @e[type=player,scores={gaeacraft.dead=1..}] run function gaeacraft:init/player
 
 # Player hud updating
-execute as @a[gamemode=!creative] run function gaeacraft:hud/main
+execute as @a[gamemode=!creative] run function gaeacraft:gui/hud/main
 
 # Set display tile of normal minecarts
 execute as @e[type=#gaeacraft:minecarts,tag=!gaeacraft.invisible_minecart] run function gaeacraft:gui/invisible_minecarts
@@ -74,4 +74,4 @@ execute as @e[type=armor_stand,tag=gaeacraft.block.ore_block] at @s unless block
 
 scoreboard players set @a gaeacraft.sneakT 0
 
-schedule function gaeacraft:tick 1t
+schedule function gaeacraft:events/tick 1t

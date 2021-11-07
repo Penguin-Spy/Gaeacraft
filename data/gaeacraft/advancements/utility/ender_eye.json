@@ -1,4 +1,5 @@
 {
+  "parent": "gaeacraft:utility/root",
   "criteria": {
     "eye": {
       "trigger": "minecraft:using_item",
@@ -12,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "gaeacraft:ender_eye/main"
+    "function": "gaeacraft:events/ender_eye"
   }
 }

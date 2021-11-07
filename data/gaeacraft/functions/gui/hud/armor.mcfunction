@@ -1,4 +1,4 @@
-#gaeacraft:hud/armor.mcfunction
+#gaeacraft:gui/hud/armor.mcfunction
 #loop for generating the player's armor section of their hud.
 #called once to start creating display, returns full display in 0 0 0's Text1 & Text2
 #E000 - E004: heart
@@ -15,4 +15,4 @@ scoreboard players remove $maxTemp gaeacraft.count 4
 scoreboard players remove $temp gaeacraft.count 4
 
 #loop if there are more characters necessary
-execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:hud/armor
+execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:gui/hud/armor

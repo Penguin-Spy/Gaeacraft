@@ -1,7 +1,7 @@
 {
-    "criteria": {
-        "nope": {
-            "trigger": "minecraft:impossible"
-        }
+  "criteria": {
+    "nope": {
+      "trigger": "minecraft:impossible"
     }
+  }
 }

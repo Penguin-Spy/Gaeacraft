@@ -1,7 +1,7 @@
 {
     "parent": "gaeacraft:utility/root",
     "rewards": {
-        "function": "gaeacraft:hud/status/thirst_1"
+        "function": "gaeacraft:gui/hud/status/thirst_1"
     },
     "criteria": {
         "drank_item": {

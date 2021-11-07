@@ -1,4 +1,4 @@
-#gaeacraft:hud/main.mcfunction
+#gaeacraft:gui/hud/main.mcfunction
 #called by each player, assembles and then displays their hud
 
 #E000 - E004: heart
@@ -29,30 +29,30 @@ data remove storage gaeacraft:hud energy
 #Health
 scoreboard players set $maxTemp gaeacraft.count 40
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.health
-function gaeacraft:hud/health
+function gaeacraft:gui/hud/health
 #Armor
 scoreboard players set $maxTemp gaeacraft.count 40
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.armor
-function gaeacraft:hud/armor
+function gaeacraft:gui/hud/armor
 #Temperature
 
-function gaeacraft:hud/temperature
+function gaeacraft:gui/hud/temperature
 #Thirst
 scoreboard players set $maxTemp gaeacraft.count 20
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.thirst
-function gaeacraft:hud/thirst
+function gaeacraft:gui/hud/thirst
 #Hunger
 scoreboard players set $maxTemp gaeacraft.count 20
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.hunger
-function gaeacraft:hud/hunger
+function gaeacraft:gui/hud/hunger
 #Aura
 scoreboard players set $maxTemp gaeacraft.count 20
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.aura
-function gaeacraft:hud/aura
+function gaeacraft:gui/hud/aura
 #Energy
 scoreboard players set $maxTemp gaeacraft.count 20
 scoreboard players operation $temp gaeacraft.count = @s gaeacraft.energy
-function gaeacraft:hud/energy
+function gaeacraft:gui/hud/energy
 
 
 # Display the created hud

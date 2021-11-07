@@ -1,5 +1,5 @@
 {
     "values": [
-        "gaeacraft:load"
+        "gaeacraft:events/load"
     ]
 }

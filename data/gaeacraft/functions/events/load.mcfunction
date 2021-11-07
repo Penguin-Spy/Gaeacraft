@@ -22,7 +22,7 @@ scoreboard objectives add gaeacraft.count dummy
 scoreboard objectives add gaeacraft.hotbar dummy
 scoreboard objectives add gaeacraft.player dummy
 scoreboard objectives add gaeacraft.sneakT minecraft.custom:minecraft.sneak_time
-scoreboard objectives add gaeacraft.deaths deathCount
+scoreboard objectives add gaeacraft.dead deathCount
 
 #player data
 scoreboard objectives add gaeacraft.health health
@@ -34,6 +34,6 @@ scoreboard objectives add gaeacraft.energy dummy
 #temp stands for temperature, not temporary!
 scoreboard objectives add gaeacraft.temp dummy
 
-schedule function gaeacraft:tick 1t
-
 tellraw @a[gamemode=creative] {"translate":"description.gaeacraft.version","color":"green","with":[{"score": {"objective": "gaeacraft.ver","name": "$major"}},{"score": {"objective": "gaeacraft.ver","name": "$minor"}},{"score": {"objective": "gaeacraft.ver","name": "$patch"}}]}
+
+function gaeacraft:events/tick

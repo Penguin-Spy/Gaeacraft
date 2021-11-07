@@ -1,4 +1,4 @@
-#gaeacraft:hud/hunger.mcfunction
+#gaeacraft:gui/hud/hunger.mcfunction
 #loop for generating the player's hunger section of their hud.
 #called once to start creating display, returns full display in 0 0 0's Text1 & Text2
 #E005 - E009: hunger
@@ -14,4 +14,4 @@ scoreboard players remove $maxTemp gaeacraft.count 4
 scoreboard players remove $temp gaeacraft.count 4
 
 #loop if there are more characters necessary
-execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:hud/hunger
+execute if score $maxTemp gaeacraft.count matches 1.. run function gaeacraft:gui/hud/hunger

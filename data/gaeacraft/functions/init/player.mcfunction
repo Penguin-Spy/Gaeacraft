@@ -2,7 +2,7 @@
 # Also ran on respawn via scoreboard detection + @e[type=player]
 
 # reset scoreboard
-scoreboard players set @s gaeacraft.deaths 0
+scoreboard players set @s gaeacraft.dead 0
 
 # set health attribute
 attribute @s minecraft:generic.max_health base set 40

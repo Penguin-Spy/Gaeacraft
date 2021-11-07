@@ -1,4 +1,5 @@
 {
+  "parent": "gaeacraft:utility/root",
   "criteria": {
     "on_join": {
       "trigger": "minecraft:tick"

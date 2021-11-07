@@ -1,10 +1,11 @@
 {
+  "parent": "gaeacraft:utility/root",
   "criteria": {
     "change": {
       "trigger": "minecraft:inventory_changed"
     }
   },
   "rewards": {
-    "function": "gaeacraft:check_inventory_changed"
+    "function": "gaeacraft:events/check_inventory_changed"
   }
 }
