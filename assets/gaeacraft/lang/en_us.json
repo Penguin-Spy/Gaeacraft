@@ -52,9 +52,9 @@
   "description.tool.element.electric": " %s ⚡ Electric",
   "description.tool.element.ender": " %s ⏼ ⭘ Ender",
 
-  "description.clay.greenware": "Greenware",
-  "description.clay.bisqueware": "Bisqueware",
-  "description.clay.glazeware": "Glazeware",
+  "description.clay.unfired": "Greenware",
+  "description.clay.fired": "Bisqueware",
+  "description.clay.glazed": "Glazeware",
 
   "block.gaeacraft.banner.pale_sun": "Banner of the Pale Sun",
   "block.gaeacraft.banner.blood_moon": "Banner of the Blood Moon",
@@ -109,13 +109,13 @@
   "item.gaeacraft.geo_res.sapphire": "Sapphire",
 
   "item.gaeacraft.clay.unfired_bowl": "Clay Bowl",
-  "item.gaeacraft.clay.fired_bowl": "Ceramic Bowl",
+  "item.gaeacraft.clay.fired_bowl": "Terracotta Bowl",
   "item.gaeacraft.clay.unfired_vessel": "Clay Vessel",
-  "item.gaeacraft.clay.fired_vessel": "Ceramic Vessel",
+  "item.gaeacraft.clay.fired_vessel": "Terracotta Vessel",
   "item.gaeacraft.clay.unfired_jug": "Clay Jug",
-  "item.gaeacraft.clay.fired_jug": "Ceramic Jug",
+  "item.gaeacraft.clay.fired_jug": "Terracotta Jug",
   "item.gaeacraft.clay.unfired_mold": "Clay Mold",
-  "item.gaeacraft.clay.fired_mold": "Ceramic Mold",
+  "item.gaeacraft.clay.fired_mold": "Terracotta Ingot Mold",
 
   "item.gaeacraft.frond": "Frond",
   "item.gaeacraft.frond_yarn": "Frond Yarn",

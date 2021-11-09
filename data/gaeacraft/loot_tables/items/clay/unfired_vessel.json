@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:2,display:{Name:'{\"translate\":\"item.gaeacraft.clay.unfired_vessel\",\"italic\":false}',Lore:['{\"translate\":\"description.clay.unfired\",\"color\":\"gray\",\"italic\":false}']},EntityTag:{NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:[\"gaeacraft.just_placed\",\"gaeacraft.pit_kiln.pot\",\"gaeacraft.pit_kiln.pot.vessel\"],ShowArms:1b,HandItems:[{id:\"minecraft:armor_stand\",Count:1b,tag:{CustomModelData:2}}],Pose:{RightArm:[0f,0f,0f]}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

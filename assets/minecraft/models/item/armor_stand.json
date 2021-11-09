@@ -1,10 +1,21 @@
 {
-    "parent": "item/generated",
-	"textures": {
-		"layer0": "item/armor_stand"
-	},
-	"overrides": [
-		{ "predicate": { "custom_model_data": 1}, "model": "gaeacraft:block/machine/crafting_grid"},
-		{ "predicate": { "custom_model_data": 2}, "model": "gaeacraft:block/machine/autocrafter"}
-	]
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/armor_stand"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1}, "model": "gaeacraft:item/clay/unfired_bowl"},
+    { "predicate": { "custom_model_data": 2}, "model": "gaeacraft:item/clay/unfired_vessel"},
+    { "predicate": { "custom_model_data": 3}, "model": "gaeacraft:item/clay/unfired_jug"},
+    { "predicate": { "custom_model_data": 4}, "model": "gaeacraft:item/clay/unfired_mold"},
+
+    { "predicate": { "custom_model_data": 400}, "model": "gaeacraft:empty"},
+    { "predicate": { "custom_model_data": 401}, "model": "gaeacraft:block/machine/pit_kiln/layer_1"},
+    { "predicate": { "custom_model_data": 402}, "model": "gaeacraft:block/machine/pit_kiln/layer_2"},
+    { "predicate": { "custom_model_data": 403}, "model": "gaeacraft:block/machine/pit_kiln/layer_3"},
+    { "predicate": { "custom_model_data": 404}, "model": "gaeacraft:block/machine/pit_kiln/layer_4"},
+    { "predicate": { "custom_model_data": 405}, "model": "gaeacraft:block/machine/pit_kiln/layer_5"},
+    { "predicate": { "custom_model_data": 406}, "model": "gaeacraft:block/machine/pit_kiln/layer_6"}
+
+  ]
 }

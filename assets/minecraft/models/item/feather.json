@@ -44,13 +44,8 @@
     { "predicate": { "custom_model_data": 207}, "model": "gaeacraft:item/rocks/andesite"},
     { "predicate": { "custom_model_data": 208}, "model": "gaeacraft:item/rocks/basalt"},
 
-    { "predicate": { "custom_model_data": 400}, "model": "gaeacraft:item/clay/unfired_bowl"},
     { "predicate": { "custom_model_data": 401}, "model": "gaeacraft:item/clay/fired_bowl"},
-    { "predicate": { "custom_model_data": 402}, "model": "gaeacraft:item/clay/unfired_vessel"},
-    { "predicate": { "custom_model_data": 403}, "model": "gaeacraft:item/clay/fired_vessel"},
-    { "predicate": { "custom_model_data": 404}, "model": "gaeacraft:item/clay/unfired_jug"},
     { "predicate": { "custom_model_data": 405}, "model": "gaeacraft:item/clay/fired_jug"},
-    { "predicate": { "custom_model_data": 406}, "model": "gaeacraft:item/clay/unfired_mold"},
     { "predicate": { "custom_model_data": 407}, "model": "gaeacraft:item/clay/fired_mold"}
 
   ]

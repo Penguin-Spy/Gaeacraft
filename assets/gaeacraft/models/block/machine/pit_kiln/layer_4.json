@@ -1,0 +1,20 @@
+{
+  "textures": {
+    "hay": "block/hay_block_top"
+  },
+  "elements": [
+    { "from": [ 0, 0, 0 ],
+      "to": [ 16, 8, 16 ],
+      "faces": {
+        "up":    { "texture": "#hay" }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, -4.875, 0],
+      "scale":[ 1.6, 1.6, 1.6]
+    }
+  }
+}

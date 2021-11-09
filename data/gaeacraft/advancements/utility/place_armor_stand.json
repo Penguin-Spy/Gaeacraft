@@ -1,0 +1,18 @@
+{
+  "parent": "gaeacraft:utility/root",
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:armor_stand"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "gaeacraft:events/place_armor_stand"
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "tag": "gaeacraft:pit_kiln_sides"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": 1,
+    "predicate": {
+      "block": {
+        "tag": "gaeacraft:pit_kiln_sides"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetX": -1,
+    "predicate": {
+      "block": {
+        "tag": "gaeacraft:pit_kiln_sides"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": 1,
+    "predicate": {
+      "block": {
+        "tag": "gaeacraft:pit_kiln_sides"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetZ": -1,
+    "predicate": {
+      "block": {
+        "tag": "gaeacraft:pit_kiln_sides"
+      }
+    }
+  }
+]

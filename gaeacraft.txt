@@ -1,67 +1,75 @@
 Custom Model Data Database:
-  Feather: (general custom items)
-    Special Items:      0000001-0000009
-      Error:                  1
-      Empty:                  2
-      Helmet Icon:            3             (Invisible on the player's head, but displays the helmet icon in the inventory)
-    Widget Items:       0000010-0000099
-      Toolmaking Gui:        11-     14
-      Knapping GUI:          15-     16
+Feather: (general custom items)
+  Special Items:      0000001-0000009
+    Error:                  1
+    Empty:                  2
+    Helmet Icon:            3             (Invisible on the player's head, but displays the helmet icon in the inventory)
+  Widget Items:       0000010-0000099
+    Toolmaking Gui:        11-     14
+    Knapping GUI:          15-     16
 
-    Materials:          0000100-0000399
-      Ores:                 100-    114     (These 2 basically just are the same section)
-      Minerals:             115-    129     (e)
-      Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
-      Rocks:                200-    209
+  Materials:          0000100-0000399
+    Ores:                 100-    114     (These 2 basically just are the same section)
+    Minerals:             115-    129     (e)
+    Gems:                 130-    137     (Not all will be filled/valid, but are kept this way to be consistent with the ID's for the ores)
+    Rocks:                200-    209
 
-    Clay:               0000400-0000499     (unfired, fired)
-      Bowl:                 400-    401     edible food
-      Vessel:               402-    403     solids  (fired will need to be a bundle instead)
-      Jug:                  404-    405     liquids (fired will need to be an empty bottle instead [and use an advancement to update the water bottle when filled])
-      Mold:                 406-    407     ingot/unspecialized
-
-
-  Scute:
-    Tool Heads:         0000001-0000999
-      Stone:                  1-      6     (axe hoe hammer shovel arrow knife)
-
-    Bindings:           0001000-0001999
-      Frond Yarn:          1000
+  Clay:               0000400-0000499     (unfired, fired)
+    #Bowl:                 400-    401     edible food
+    #Vessel:               402-    403     solids  (fired will need to be a bundle instead)
+    #Jug:                  404-    405     liquids (fired will need to be an empty bottle instead [and use an advancement to update the water bottle when filled])
+    #Mold:                 406-    407     ingot/unspecialized
 
 
-  Eye of Ender:
-    Materials:          0000100->
-      Frond:                101
+Scute:
+  Tool Heads:         0000001-0000999
+    Stone:                  1-      6     (axe hoe hammer shovel arrow knife)
 
-  Armor Stand:
-    Custom Blocks:      0000001-0000199
-      Crafting Grid:          1
-      Autocrafter:            2
+  Bindings:           0001000-0001999
+    Frond Yarn:          1000
 
-  Tools: (applies to all)
-    Key:                 Tmmbbrr
-    T  = type (0 = base, 1 = hammer, 2 = knife, 3 = spear)
-    mm = materal (for base tool items that support multiple materials [iron_pickaxe])
-    bb = binding
-    rr = tool rod/handle
+Bundle:
+  Dyed:                    01-     16     (in order of how the creative inventory sorts wool)
+  Plain Vessel:            20
+  Dyed Vessels:            21-     36     (same order)
 
-  Stone (item):         0000001-0000008
+Eye of Ender:
+  Materials:          0000100->
+    Frond:                101
 
-  Iron ore (item):
-    Metals:             0000001-0000014
-    Minerals:           0000015-0000029
-    Gems:               0000030-0000037
+Armor Stand:
+  Block Placement Items: 0000001-0000399
+  Clay Pots:          0000001-0000099
+    Basic pots:             1-      4     (bowl, vessel, jug, mold)
 
-  Player Head:
-    Blocks:             0000001-0000499
-      Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
-        Raw:            0000001-0000009
-        Cobblestone:    0000010-0000019
-        Polished:       0000020-0000029
-        Bricks:         0000030-0000039
-      Machines:         0000100-0000299
-        Crafting Grid:      100
-        Autocrafter:        101
+  Custom Blocks:      0000400-0000799
+    Pit Kiln:             400-    406
+
+
+Tools: (applies to all)
+  Key:                 Tmmbbrr
+  T  = type (0 = base, 1 = hammer, 2 = knife, 3 = spear)
+  mm = materal (for base tool items that support multiple materials [iron_pickaxe])
+  bb = binding
+  rr = tool rod/handle
+
+Stone (item):         0000001-0000008
+
+Iron ore (item):
+  Metals:             0000001-0000014
+  Minerals:           0000015-0000029
+  Gems:               0000030-0000037
+
+Player Head:
+  Blocks:             0000001-0000499
+    Stone:            0000001-0000039     (not all will be filled/valid, because some are already existing [gabbro and default stones]. im keeping it like this for orginization)
+      Raw:            0000001-0000009
+      Cobblestone:    0000010-0000019
+      Polished:       0000020-0000029
+      Bricks:         0000030-0000039
+    Machines:         0000100-0000299
+      Crafting Grid:      100
+      Autocrafter:        101
 
 Player Head UUID Database:
   Blocks:               0,0,0,0-0,0,0,499
@@ -94,7 +102,7 @@ gaeacraft:gui
 blocks:
   0 0 0 oak_sign
   1 0 0 shulker_box
-  2 0 0 shulker_box
+  #2 0 0 shulker_box
 
 Scoreboards:
   CustomCraftingT   - For custom_crafting_table
@@ -103,7 +111,8 @@ Scoreboards:
   gaeacraft.const   - Gaeacraft constants
   gaeacraft.durab   - Stores player's tool durability temporarily, should change to use gaeacraft.count
   gaeacraft.count   - Temporary scoreboard, not named temp because temp is temperature
-  gaeacraft.player  - Player ID, likely will be removed, was only used for raycasting (which will be removed), and UUID's are now easier to use
+                        used by pit_kiln manager for # of pots in it
+  gaeacraft.player  - Player ID (yea i should use UUIDs but eh)
   gaeacraft.sneakT  - minecraft.custom:minecraft.sneak_time
   gaeacraft.health  - health, readonly, stores player health
   gaeacraft.armor   - armor, readonly, stores player armor
@@ -112,13 +121,11 @@ Scoreboards:
   gaeacraft.aura    - Stores player's aura level
   gaeacraft.energy  - Stores player's energy level
   gaeacraft.temp    - Stores player's temperature, not for temporary values!
-  gaeacraft.craftX  - Stores width of items in the crafting grid
-  gaeacraft.craftY  - Stores height of items in the crafting grid
 
 Tags:
-  Custom_Crafting_Table: base tag for custom crafting tables. alone, it signifies the normal, autocrafting table, but it is required for all others.
-  gaeacraft.cct.chest_minecart:  tag for the minecart used in cct crafting
-  gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
+  #Custom_Crafting_Table: base tag for custom crafting tables. alone, it signifies the normal, autocrafting table, but it is required for all others.
+  #gaeacraft.cct.chest_minecart:  tag for the minecart used in cct crafting
+  #gaeacraft.cct.cart: tag for the armorstand used in cct crafting, signifies to use minecart data commands
   gaeacraft.invisible_minecart: signifies that the minecart with the tag has been either modified by the invisible_minecart function, or should not be touched by said function
   gaeacraft.player.hasID: the player has been given an id on the gaeacraft.player scoreboard
   gaeacraft.block.ore:  Is an ore block armorstand
@@ -129,11 +136,15 @@ Tags:
 
   gaeacraft.player.gui_available.knapping.stone: stone knapping gui minecart exists
   gaeacraft.player.gui_available.knapping.clay: clay knapping gui minecart exists
-  gaeacraft.player.gui_available.knapping.has_output: knapping gui minecart is displaying an output item
+  gaeacraft.gui_cart.knapping.has_output: knapping gui minecart is displaying an output item
   gaeacraft.player.gui_available.toolmaking: toolmaking gui minecart exists
-    gaeacraft.player.gui_available.toolmaking.[handle|binding|one_head|two_heads]: multiple are allowed, signify which slots are enabled
-  gaeacraft.temp.minecart_gui: this entity is part of a minecart_gui that's currently being processed
+    gaeacraft.gui_cart.toolmaking.[handle|binding|one_head|two_heads]: multiple are allowed, signify which slots are enabled
+  gaeacraft.temp.minecart_gui: this entity is part of a minecart gui that's currently being processed
 
+  gaeacraft.pit_kiln.pot: a clay pot that's part of a pit kiln
+  gaeacraft.pit_kiln.main: the center armor_stand of the pit kiln, accepts and displays thatch & logs, and keeps track of how long the pit kiln has been burning
+
+#OUTDATED
 When adding a new minecart_gui specific lines must be added to the following functions:
   inventory_changed.mcfunction
   start.mcfunction
@@ -212,7 +223,7 @@ Campfire Loader?:
     function #campfire_loader:load_version
 
   1st calls #campfire_loader:load_version
-  gaeacraft:  { major: 2b, minor: 8b, patch: 13b, dependencies: {}, function: "#gaeacraft:load" }
+  gaeacraft:  { major: 2b, minor: 8b, patch: 13b, dependencies: {}, function: "#gaeacraft:events/load" }
   gc-story:   { major: 0b, minor: 3b, patch: 1b,  dependencies: { gaeacraft: { min: { major: 1b, minor: 4b, patch: 0b}, max: { major: 3b } } }, function: "gc-story:init"}
   gc-liquids: { major: 0b, minor: 12b, patch: 2b, dependencies: { gaeacraft: { } }, compatibility: { gc-story: { major: 0b, minor: 3b, function: "gc-liquids:story-compat/add-story-liquids"} }, function: "gc-liquids:add-all" }
 
