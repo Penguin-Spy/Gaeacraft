@@ -42,6 +42,7 @@ data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1
 data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.toolmaking.left_head set from entity @s Items[{Slot:2b}]
 data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.toolmaking.right_head set from entity @s Items[{Slot:12b}]
 
+data remove block 1 0 0 Items
 # run loot as fishing_armor_stand
 execute as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/toolmaking/tools ~ ~ ~ mainhand
 # copy to our slot 15 & if item in shulker, add gaeacraft.gui_cart.toolmaking.has_output

@@ -5,7 +5,6 @@ function gaeacraft:gui/dump
 # if outputting & no 15, run :finish
 execute if entity @s[tag=gaeacraft.gui_cart.knapping.has_output] unless data entity @s Items[{Slot:15b}] as @p[tag=gaeacraft.temp.minecart_gui,limit=1] run function gaeacraft:gui/knapping/finish
 
-
 # if not outputting & 15, run :dump_output
 execute if entity @s[tag=!gaeacraft.gui_cart.knapping.has_output] if data entity @s Items[{Slot:15b}] run function gaeacraft:gui/dump_output
 
@@ -37,6 +36,7 @@ execute if data entity @s Items[{Slot:20b}] run data modify entity @e[type=armor
 execute if data entity @s Items[{Slot:21b}] run data modify entity @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] HandItems[0].tag.knapping.slots.i set value 1b
 
 # run loot as fishing_armor_stand
+data remove block 1 0 0 Items
 execute if entity @s[tag=gaeacraft.gui_cart.knapping.stone] as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/stone ~ ~ ~ mainhand
 execute if entity @s[tag=gaeacraft.gui_cart.knapping.clay] as @e[type=armor_stand,tag=gaeacraft.fishing_armor_stand,limit=1] run loot replace block 1 0 0 container.15 fish gaeacraft:recipes/knapping/clay ~ ~ ~ mainhand
 # copy to our slot 15 & if item in shulker, add gaeacraft.gui_cart.knapping.has_output
